@@ -1,2 +1,2 @@
 # godot-guide
-Suplement til godot undervisning
+Suplement til godot undervisning.
