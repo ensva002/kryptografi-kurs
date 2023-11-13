@@ -1,4 +1,4 @@
-fetch('pagelist.json')
+fetch('../pagelist.json')
     .then(response => response.json())
     .then(data => {
         const overview = document.createElement('div');
