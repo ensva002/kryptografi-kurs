@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#overview {
+    flex: 1;
+    overflow: auto;
+    background: #d6d9dd;
+    transition: width 0.5s;
+}
+
+#content {
+    flex: 3;
+    overflow: auto;
+    padding: 1em;
+}
+
+.current {
+    background-color: #f8f9fa;
+}
+
+
+@media (max-width: 700pt) {
+    #overview {
+        width: 0;
+    }
+}
