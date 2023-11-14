@@ -41,7 +41,7 @@ do
     echo "$new_content" > "$dest/$filename.html"
 
     # Remove the original file
-    rm "$filepath"
+    #rm "$filepath"
 done
 
 #============ POPULATE MENU ============

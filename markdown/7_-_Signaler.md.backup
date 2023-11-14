@@ -21,9 +21,10 @@ Alt du skriver i denne funksjonen kjører hver gang du trykker på knappen. I de
 func _on_pressed():
 ```gdscript
   get_tree().change_scene_to_file("res://Platformer/level1.tscn")
-```
+
+
 
 Denne laster inn level1.tscn som ligger i mappen Platformer
 
-![](../media/7_signal1.gif)
+
 
