@@ -1,0 +1,2 @@
+Guide ikke skrevet enda, men ta en titt på nyeste version av eksempel prosjektet, Timer eksempelet ligger i Lighting mappen
+
