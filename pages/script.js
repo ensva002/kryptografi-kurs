@@ -3,6 +3,9 @@ fetch('../pagelist.json')
     .then(data => {
         const overview = document.createElement('div');
         overview.id = 'overview';
+        const toggle = document.createElement('button');
+        toggle.id = "toggle"
+        toggle.textContent = "AAAAAAAAAA"
         document.body.prepend(overview);
         const currentPage = window.location.pathname.split('/').pop();
         data.files.forEach(file => {
@@ -19,3 +22,11 @@ fetch('../pagelist.json')
         });
     })
     .catch(error => console.error('Error:', error));
+
+document.getElementById('toggle').addEventListener('click', function() {
+    if (overview.style.display = "none") {
+        overview.style.display = "block"
+    } else {
+        overview.style.display = "none"
+    }
+});

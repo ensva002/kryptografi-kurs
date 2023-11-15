@@ -7,11 +7,12 @@ body {
 
 #overview {
     flex: 1.3;
+    max-width: 200pt;
     overflow: auto;
     background: #d6d9dd;
     transition: width 0.5s;
     box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.2);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #content {
@@ -40,9 +41,19 @@ li{
     padding: 5pt;
 }
 
+#toggle{
+    display: none;
+}
 
 @media (max-width: 500pt) {
     #overview {
+        position: absolute; 
         display: none;
+    }
+    #toggle{
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 10px
     }
 }
