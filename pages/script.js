@@ -3,9 +3,6 @@ fetch('../pagelist.json')
     .then(data => {
         const overview = document.createElement('div');
         overview.id = 'overview';
-        const toggle = document.createElement('button');
-        toggle.id = "toggle"
-        toggle.textContent = "AAAAAAAAAA"
         document.body.prepend(overview);
         const currentPage = window.location.pathname.split('/').pop();
         data.files.forEach(file => {
@@ -20,13 +17,17 @@ fetch('../pagelist.json')
             }
             overview.appendChild(listItem);
         });
+        addLogo(overview)
     })
     .catch(error => console.error('Error:', error));
 
-document.getElementById('toggle').addEventListener('click', function() {
-    if (overview.style.display = "none") {
-        overview.style.display = "block"
-    } else {
-        overview.style.display = "none"
-    }
-});
+function addLogo(overview){
+    let logo = document.createElement('img');
+    logo.src = "../logo.svg"
+    logo.style.width = "80%"
+    logo.style.padding = "10pt"
+    logo.addEventListener("click",function(){
+        window.location.href = "../index.html"
+    })
+    overview.insertBefore(logo,overview.firstChild)
+}
