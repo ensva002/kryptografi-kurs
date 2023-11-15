@@ -17,7 +17,6 @@ body {
 
 #overview *{
     margin-left: 5pt;
-
 }
 
 #content {
@@ -62,9 +61,8 @@ code{
     display: none;
 }
 
-@media (max-width: 600pt) {
+@media (max-width: 590pt) {
     #overview {
-        /* position: absolute;  */
         flex: 0;
     }
     #toggle{

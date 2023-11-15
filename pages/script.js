@@ -18,6 +18,7 @@ fetch('../pagelist.json')
             overview.appendChild(listItem);
         });
         addLogo(overview)
+        addButton()
     })
     .catch(error => console.error('Error:', error));
 
@@ -31,3 +32,20 @@ function addLogo(overview){
     })
     overview.insertBefore(logo,overview.firstChild)
 }
+
+function addButton(){
+    const content = document.getElementById("content")
+    let menuButton = document.createElement('button')
+    menuButton.id = "toggle"
+    menuButton.textContent = "☰"
+    let overview = document.getElementById("overview")
+    menuButton.addEventListener("click",function(){
+        let stylesheet = window.getComputedStyle(overview)
+        if (stylesheet.flex == "1 0 1%"){
+            overview.style.width = "100px"
+            console.log(stylesheet.flex)
+        }
+    })
+    content.insertBefore(menuButton,content.firstChild)
+}
+
