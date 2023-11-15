@@ -9,7 +9,7 @@ fetch('../pagelist.json')
         document.body.prepend(overview);
         const currentPage = window.location.pathname.split('/').pop();
         data.files.forEach(file => {
-            const fileName = file.replace('.html', '').replace('_', ' ');
+            const fileName = file.replace('.html', '').replace(/_/g, ' ');
             const listItem = document.createElement('li');
             const link = document.createElement('a');
             link.href = `${file}`;

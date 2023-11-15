@@ -50,8 +50,8 @@ dir="pages/"
 # Start of JSON
 echo '{ "files": [' > pagelist.json
 
-# Find HTML files, exclude index.html, format as JSON
-find $dir -name "*.html" ! -name "index.html" -printf '"%f", ' >> pagelist.json
+# Find HTML files, exclude index.html, sort them, and then format as JSON
+find $dir -name "*.html" ! -name "index.html" | sort -V | awk -v ORS=', ' '{ sub(".*/",""); print "\""$0"\""}' >> pagelist.json
 
 # End of JSON
 sed -i '$ s/..$/] }/' pagelist.json
