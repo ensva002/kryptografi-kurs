@@ -12,6 +12,7 @@ body {
     background: #eef2f9;
     transition: width 0.5s;
     transition: 0.5s;
+    padding-top: 5pt;
 }
 
 #overview *{
@@ -52,9 +53,9 @@ li{
 
 code{
     background: #eef2f9;
-    padding: 5pt;
+    padding: 10pt;
     border-radius: 10px;
-    display:block;
+    display:inline-block;
 }
 
 #toggle{
