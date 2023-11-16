@@ -40,10 +40,7 @@ function addButton(){
     menuButton.textContent = "☰"
     let overview = document.getElementById("overview")
     menuButton.addEventListener("click",function(){
-        let stylesheet = window.getComputedStyle(overview)
-        if (stylesheet.left == "-180pt"){
-            overview.style.left = "0pt"
-        }
+
     })
     content.insertBefore(menuButton,content.firstChild)
 }
