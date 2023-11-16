@@ -38,7 +38,7 @@ function addButton(){
     let menuButton = document.createElement('button')
     menuButton.id = "toggle"
     menuButton.textContent = "☰"
-    let toggle = false
+    let toggle = true
     menuButton.addEventListener("click",function(){
         if (toggle){
             document.documentElement.style.setProperty('--drawer', "0pt")
