@@ -41,9 +41,11 @@ function addButton(){
     let toggle = true
     menuButton.addEventListener("click",function(){
         if (toggle){
-            document.documentElement.style.setProperty('--drawer', "0pt")
+            document.documentElement.style.setProperty('--drawer-margin', "0pt")
+            document.documentElement.style.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0.3)")
         }else{
-            document.documentElement.style.setProperty('--drawer', "-180pt")
+            document.documentElement.style.setProperty('--drawer-margin', "-180pt")
+            document.documentElement.style.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0)")
         }
         toggle = !toggle
     })
