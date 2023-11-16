@@ -31,9 +31,11 @@ do
     <title>$title</title>
 </head>
 <body>
-    <div id=\"content\">
-        <h1>$title</h1>
-        $content
+    <div id=\"canvas\">
+        <div id=\"content\">
+            <h1>$title</h1>
+            $content
+        </div>
     </div>
 </body>
 </html>"

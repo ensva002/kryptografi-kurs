@@ -8,9 +8,10 @@
     <title>5 - Roter og skyt</title>
 </head>
 <body>
-    <div id="content">
-        <h1>5 - Roter og skyt</h1>
-        <p>Nå skal vi legge til en kanon som skyter mot musepekeren. Vi begynner med å legge til en Node2D, i eksempelet heter den “kanonfeste”, den skal posisjoneres midt på tanksen. under den legger vi til grafikken til kanonen. Den skal peke mot høyre, og bakerste delen skal overlappe kanonfeste.</p>
+    <div id="canvas">
+        <div id="content">
+            <h1>5 - Roter og skyt</h1>
+            <p>Nå skal vi legge til en kanon som skyter mot musepekeren. Vi begynner med å legge til en Node2D, i eksempelet heter den “kanonfeste”, den skal posisjoneres midt på tanksen. under den legger vi til grafikken til kanonen. Den skal peke mot høyre, og bakerste delen skal overlappe kanonfeste.</p>
 <p><img src="../media/5_roter1.png" alt="" /></p>
 <p>Så legger vi til et script på kanonfeste, ikke kanonen.</p>
 <pre><code class="language-gdscript">extends Node2D
@@ -40,6 +41,7 @@ if Input.is_action_just_pressed(&quot;ui_accept&quot;):
 </code></pre>
 <p>“bullet” variabelen laster inn bullet senen vi lagde tidligere, slik at den er klar til å legges inn når vi skal skyte. det lønner seg å preloade slik vi har gjort her, ellers kan det hende fryser i et par millisekunder hver gang vi skyter å spillet må hente kulen på nytt. bullet.instantiate() lager en instans av kulen i spillet. Dette betyr at vi har lagd en utgave av kulen, den ligger fremdeles å venter til vi sier hvor i senetreet vi skal legge noden. Kanonen er en child node til tanken, og tanken er en childnode av rot noden, vi ønsker at kulen skal høre til rot noden, og ikke tanksen. Om kulen blir en child node av tanksen så vil kulen flytte på seg i forrhold til tanksen, men her ønsker vi ingen kontroll over kulen etter at den er skutt. Derfor bruker vi get_parent() to ganger, og legger instansen av kulen vår som en child node til rot noden.</p>
 <p><img src="../media/5_roter3.gif" alt="" /></p>
+        </div>
     </div>
 </body>
 </html>

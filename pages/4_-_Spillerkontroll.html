@@ -8,9 +8,10 @@
     <title>4 - Spillerkontroll</title>
 </head>
 <body>
-    <div id="content">
-        <h1>4 - Spillerkontroll</h1>
-        <p>Så lenge karakteren vår er en CharacterBody2D, så er alt vi trenger for å bevege den å sette velocity og bruke move_and_slide() i _physics_process(delta) funksjonen.</p>
+    <div id="canvas">
+        <div id="content">
+            <h1>4 - Spillerkontroll</h1>
+            <p>Så lenge karakteren vår er en CharacterBody2D, så er alt vi trenger for å bevege den å sette velocity og bruke move_and_slide() i _physics_process(delta) funksjonen.</p>
 <pre><code class="language-gdscript">extends CharacterBody2D
 
 func _physics_process(delta):
@@ -57,6 +58,7 @@ velocity.y = move_toward(velocity.y, move_direction.y * speed, 5)
 <p><img src="../media/4_spillerkontrol2.gif" alt="" /></p>
 <p>om vi ønsker at bilen skal kunne gå diagonalt må vi bare bytte ut elif på linje 10 med if. i forrige eksempel. Det gjør at vi kan ta i mot både vertikal og horisontalt input på samme frame.</p>
 <p><img src="../media/4_spillerkontrol3.gif" alt="" /></p>
+        </div>
     </div>
 </body>
 </html>
