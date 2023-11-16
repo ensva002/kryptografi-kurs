@@ -41,9 +41,8 @@ function addButton(){
     let overview = document.getElementById("overview")
     menuButton.addEventListener("click",function(){
         let stylesheet = window.getComputedStyle(overview)
-        if (stylesheet.flex == "1 0 1%"){
-            overview.style.width = "100px"
-            console.log(stylesheet.flex)
+        if (stylesheet.left == "-180pt"){
+            overview.style.left = "0pt"
         }
     })
     content.insertBefore(menuButton,content.firstChild)
