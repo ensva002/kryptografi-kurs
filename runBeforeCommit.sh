@@ -17,7 +17,8 @@ do
     title=${filename//_/ }
 
     # Extract the page content
-    content=$(sed -n '/<body>/,/<\/body>/p' "$filepath" | sed '1d;$d')
+    content=$(tail -c +110 "$filepath" | head -c -14)
+
 
     # Create the new HTML structure with the extracted content and title
     new_content="<!DOCTYPE html>
