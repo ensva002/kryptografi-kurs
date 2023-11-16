@@ -38,9 +38,14 @@ function addButton(){
     let menuButton = document.createElement('button')
     menuButton.id = "toggle"
     menuButton.textContent = "☰"
-    let overview = document.getElementById("overview")
+    let toggle = false
     menuButton.addEventListener("click",function(){
-
+        if (toggle){
+            document.documentElement.style.setProperty('--drawer', "0pt")
+        }else{
+            document.documentElement.style.setProperty('--drawer', "-180pt")
+        }
+        toggle = !toggle
     })
     content.insertBefore(menuButton,content.firstChild)
 }

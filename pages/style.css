@@ -1,3 +1,7 @@
+:root{
+    --drawer: -180pt;
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -6,13 +10,13 @@ body {
 }
 
 #overview {
-    position: absolute;
-    width: 180pt;
+    min-width: 180pt;
+    max-width: 180pt;
     height: 100%;
     background: #eef2f9;
     transition: 0.5s;
     padding-top: 5pt;
-    left: 0pt;
+    margin-left: 0pt;
 }
 
 #overview *{
@@ -20,8 +24,6 @@ body {
 }
 
 #content {
-    position: absolute;
-    left: 180pt;
     overflow: auto;
     padding: 1em;
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
@@ -59,20 +61,18 @@ code{
 }
 
 #toggle{
-    left: -100pt;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    transition: 0.5s;
 }
 
 @media (max-width: 590pt) {
     #overview {
-        z-index: 1;
-        left: -180pt;
-    }
-    #content{
-        left: 0pt;
+        /* z-index: 1; */
+        margin-left: var(--drawer);
     }
     #toggle{
-        position: absolute;
         left: 10px;
-        top: 10px
     }
 }
