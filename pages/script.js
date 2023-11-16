@@ -43,9 +43,12 @@ function addButton(){
         if (toggle){
             document.documentElement.style.setProperty('--drawer-margin', "0pt")
             document.documentElement.style.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0.3)")
+            document.documentElement.style.setProperty('--toggle-left', "180pt")
         }else{
             document.documentElement.style.setProperty('--drawer-margin', "-180pt")
             document.documentElement.style.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0)")
+            document.documentElement.style.setProperty('--toggle-left', "0pt")
+            
         }
         toggle = !toggle
     })
