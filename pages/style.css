@@ -3,9 +3,10 @@
     --drawer-shadow: 10px 0px 30px 0px rgba(0,0,0,0.0);
     --toggle-left: -2pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    --primary: #ffffff;
+    --primary: #FFFFFF;
     --secondary: #eef2f9;
     --text: #000000;
+    --time: 200ms;
     color: var(--text);
     background-color: var(--primary);
 }
@@ -22,7 +23,7 @@ body {
     max-width: 180pt;
     height: 100%;
     background: var(--secondary);
-    transition: 0.5s;
+    transition: var(--time);
     padding-top: 5pt;
     margin-left: 0pt;
     overflow: auto;
@@ -38,7 +39,7 @@ body {
     overflow-y: auto;
     padding: 1em;
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
-    transition: 0.5s;
+    transition: var(--time);
     font-size: 11pt;
     width:100%
 }
@@ -47,7 +48,7 @@ body {
     max-width: 600pt;
     margin-left: 4%;
     margin-right: 4%;
-    transition: 0.5s;
+    transition: var(--time);
 }
 
 .current {
@@ -96,7 +97,7 @@ p code{
     position: absolute;
     left: -35px;
     top: 5px;
-    transition: 0.5s;
+    transition: var(--time);
     font-size: 17pt;
     border-radius: 0px 15px 15px 0px;
     color: rgb(55, 168, 55);
