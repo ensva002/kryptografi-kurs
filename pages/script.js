@@ -53,5 +53,24 @@ function addButton(){
         toggle = !toggle
     })
     content.insertBefore(menuButton,content.firstChild)
+    const overview = document.getElementById("overview")
+    let modeButton = document.createElement('button')
+    modeButton.id = "mode"
+    modeButton.textContent = "C/O"
+    let mode = true
+    modeButton.addEventListener("click",function(){
+        if (mode){
+            document.documentElement.style.setProperty('--primary', "#111111")
+            document.documentElement.style.setProperty('--secondary', "#1e1f20")
+            document.documentElement.style.setProperty('--text', "#FFFFFF")
+        }else{
+            document.documentElement.style.setProperty('--primary', "#FFFFFF")
+            document.documentElement.style.setProperty('--secondary', "#eef2f9")
+            document.documentElement.style.setProperty('--text', "#000000")
+        }
+        mode = !mode
+    })
+    overview.insertBefore(modeButton,overview.firstChild)
 }
+
 

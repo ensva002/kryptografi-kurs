@@ -3,6 +3,11 @@
     --drawer-shadow: 10px 0px 30px 0px rgba(0,0,0,0.0);
     --toggle-left: -2pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --primary: #ffffff;
+    --secondary: #eef2f9;
+    --text: #000000;
+    color: var(--text);
+    background-color: var(--primary);
 }
 
 body {
@@ -16,7 +21,7 @@ body {
     min-width: 180pt;
     max-width: 180pt;
     height: 100%;
-    background: #eef2f9;
+    background: var(--secondary);
     transition: 0.5s;
     padding-top: 5pt;
     margin-left: 0pt;
@@ -46,7 +51,7 @@ body {
 }
 
 .current {
-    background: white;
+    background: var(--primary);
     font-weight: bold;
     border-radius: 10px;
     width: 86%;
@@ -61,7 +66,7 @@ img{
 
 #overview a{
     text-decoration: none;
-    color: black;
+    color: var(--text);
 }
 
 li{
@@ -70,7 +75,7 @@ li{
 }
 
 code{
-    background: #eef2f9;
+    background: var(--secondary);
     padding: 10pt;
     border-radius: 10px;
     display:inline-block;
@@ -80,7 +85,7 @@ code{
 }
 
 p code{
-    background: #eef2f9;
+    background: var(--secondary);
     padding: 2pt;
     border-radius: 5px;
     max-width: inherit;
@@ -97,7 +102,7 @@ p code{
     color: rgb(55, 168, 55);
     border:solid 1pt rgb(181, 186, 196);
     border-left: none;
-    background-color: #eef2f9;
+    background-color: var(--secondary);
 }
 
 @media (max-width: 600pt) {
