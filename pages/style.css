@@ -105,6 +105,16 @@ p code{
     background-color: var(--secondary);
 }
 
+#mode{
+    position: absolute;
+    background:var(--text);
+    border: none;
+    border-radius: 20pt;
+    font-size: 23pt;
+    padding: 1pt;
+    padding-top: 2pt;
+}
+
 @media (max-width: 600pt) {
     #overview {
         box-shadow: var(--drawer-shadow);

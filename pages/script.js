@@ -67,7 +67,7 @@ function addButton(){
     const overview = document.getElementById("overview")
     let modeButton = document.createElement('button')
     modeButton.id = "mode"
-    modeButton.textContent = "C/O"
+    modeButton.textContent = "🌓"
     modeButton.addEventListener("click",function(){
         if (mode){
             document.documentElement.style.setProperty('--primary', "#111111")
