@@ -53,11 +53,21 @@ function addButton(){
         toggle = !toggle
     })
     content.insertBefore(menuButton,content.firstChild)
+    // Dark mode
+    let mode = JSON.parse(localStorage.getItem("mode"));
+    if (mode === null) {
+        mode = true;
+        localStorage.setItem("mode", mode);
+    }
+    if (!mode){
+        document.documentElement.style.setProperty('--primary', "#111111")
+        document.documentElement.style.setProperty('--secondary', "#1e1f20")
+        document.documentElement.style.setProperty('--text', "#FFFFFF")
+    }
     const overview = document.getElementById("overview")
     let modeButton = document.createElement('button')
     modeButton.id = "mode"
     modeButton.textContent = "C/O"
-    let mode = true
     modeButton.addEventListener("click",function(){
         if (mode){
             document.documentElement.style.setProperty('--primary', "#111111")
@@ -69,6 +79,9 @@ function addButton(){
             document.documentElement.style.setProperty('--text', "#000000")
         }
         mode = !mode
+        console.log(mode)
+        localStorage.setItem("mode",mode)
+        console.log(localStorage.getItem("mode"))
     })
     overview.insertBefore(modeButton,overview.firstChild)
 }
