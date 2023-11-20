@@ -113,6 +113,7 @@ p code{
     border-radius: 20pt;
     font-size: 23pt;
     padding: 1pt;
+    padding-bottom: 2pt;
 }
 
 @media (max-width: 600pt) {
