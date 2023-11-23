@@ -15,7 +15,7 @@ Så kan vi legge inn karakteren vår, ta gjerne en titt på eksempel prosjektet 
 
 Vi ønsker nødvendigvis ikke at karakteren selv blir lyst opp, det kan vi unngå ved å bytte hvilket Light Mask lag AnimatedSprite2D ligger på. Dette kan du gjøre med nesten alle noder for å kontrolere hva de blir opplyst av, det ligger under Visibility.
 
-![](../media/8_lys2.gif)
+![](../media/8_lys3.gif)
 
 Disse lagene tilsvarer Item Cull Mask under Range i PointLight2D. Om du markerer 1 2 og 3, vil det lyse opp noder med light mask 1 2 eller 3. Så om vi slår av alle Light Mask lagene på spiller spriten, vil ingen lys kunne lyse opp spilleren. VI skal se mer på hvordan vi bruker disse lagene i del 9 - ⏳ Timer.
 
