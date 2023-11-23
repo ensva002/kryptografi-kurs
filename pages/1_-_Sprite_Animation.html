@@ -11,13 +11,12 @@
     <div id="canvas">
         <div id="content">
             <h1>1 - Sprite Animation</h1>
-            <p>Vi begynner med en enkel animasjon så vi har en karakter å bruke gjennom resten av guidene.
+            <p>Vi begynner med en enkel animasjon så vi har en karakter å bruke gjennom resten av guiden.
 Last ned dette spritesheetet for å følge guiden:
 <a href="https://udeoslokommuneno-my.sharepoint.com/:i:/g/personal/ensva002_osloskolen_no/EQJEMfZfyhxEsahnFmAknOABOyzP1ygvjZqiBGQP29KoPA?e=8uoi9g">Spritesheet TODO: Ny Link</a></p>
 <p>Begynn med å dra spritesheetet inn i “FileSystem” vinduet i godot, som standard befinner det seg nederst til venstre.</p>
 <p><img src="../media/1_sprite3.gif" alt="" /></p>
-<p>//Om du høyreklikker hvor som helst i FileSystem vinduet kan du velge “Open in File Manager”, da vil Finder åpne mappen til prosjektet.
-Så lager vi en ny sene. Vi skal lage en karakter, så da kan vi velge Other Node og finne CharacterBody2D. Hint: alle 2D noder er blå, 3D noder er rød og GUI er grønn. Det er også noen noder som ikke passer til noen av kategoriene(hvite), eller dekker fler kategorier(flerfarget).</p>
+<p>Så lager vi en ny sene. Vi skal lage en karakter, så da kan vi velge Other Node og finne CharacterBody2D. Hint: alle 2D noder er blå, 3D noder er rød og GUI er grønn. Det er også noen noder som ikke passer til noen av kategoriene(hvite), eller dekker fler kategorier(flerfarget).</p>
 <p><img src="../media/1_sprite1.gif" alt="" /></p>
 <p>Punktet der den røde og grønne linjen møtes er “origin” midtpunktet til karakteren. Etterhvert som vi legger til noder må vi passe på at vi holder oss til sentrum av karakteren. Vi ser og om vi markerer CharacterBody2D så markeres punktet den befinner seg i scenen. som skal være midt på.</p>
 <p><img src="../media/1_sprite4.gif" alt="" /></p>
@@ -25,7 +24,7 @@ Så lager vi en ny sene. Vi skal lage en karakter, så da kan vi velge Other Nod
 <p><img src="../media/1_sprite12.png" alt="" /></p>
 <p>Med AnimatedSprite2D valgt, gå til Inspector, vanligvis på høyre side, åpne Animation og klikk på pilen ved Sprite Frames og velg New SpriteFrames for å lage en ny sprite frame resurs. Klikk så på den nye sprite frame resursen.</p>
 <p><img src="../media/1_sprite2.gif" alt="" /></p>
-<p>Nå skal SpriteFrames fanen ha åpnet seg nede på skjermen. Her kan vi lage alle animasjonene til karakteren vår. Klikk på knappen med et lite rutenett for å legge til nye bilder til animasjonen, velg filen vi lastet ned i starten og juster parameterene oppe i høyre hjørnet slik at rutenettet passer karakterene. i dette tilfellet vil vi ha 8 x 8. Velg to bilder fra en løpe animasjon og klikk på Add Frames. De to bildene vil legge seg inn i animasjonen. over dem ser du knapper for å kontrolere avspillingen av animasjonen. Vi vil at animasjonen skal loope så pass på at de looping er på (blå = på, hvit = av). det er de to pilene som peker i sirkel til venstre for FPS.</p>
+<p>Nå skal SpriteFrames fanen ha åpnet seg nede på skjermen. Her kan vi lage alle animasjonene til karakteren vår. Klikk på knappen med et lite rutenett for å legge til nye bilder fra et spritesheet til animasjonen, velg filen vi lastet ned i starten og juster parameterene oppe i høyre hjørnet slik at rutenettet passer karakterene. i dette tilfellet vil vi ha 8 x 8. Velg to bilder fra en løpe animasjon og klikk på Add Frames. De to bildene vil legge seg inn i animasjonen. over dem ser du knapper for å kontrolere avspillingen av animasjonen. Vi vil at animasjonen skal loope så pass på at de looping er på (blå = på, hvit = av). det er de to pilene som peker i sirkel til venstre for FPS.</p>
 <p><img src="../media/1_sprite7.gif" alt="" /></p>
 <p>Dobbeltklikk på animasjonsnavnet, det heter nå “default” og gi den et nytt navn, som “run”. Animasjonene bør ha korte og forklarende navn så vi lett kan referere til dem i koden vår senere.
 klikk på arket med en + på for å lage en ny animasjon.</p>
