@@ -11,6 +11,14 @@
     background-color: var(--primary);
 }
 
+a{
+    color: rgb(95, 151, 230);
+}
+
+a:visited{
+    color: rgb(95, 151, 230);
+}
+
 body {
     display: flex;
     height: 100vh;
