@@ -1,6 +1,6 @@
 Vi begynner med en enkel animasjon så vi har en karakter å bruke gjennom resten av guiden. 
-Last ned dette spritesheetet for å følge guiden:
-[Spritesheet TODO: Ny Link](https://udeoslokommuneno-my.sharepoint.com/:i:/g/personal/ensva002_osloskolen_no/EQJEMfZfyhxEsahnFmAknOABOyzP1ygvjZqiBGQP29KoPA?e=8uoi9g)
+Last ned denne asset-pakken for å følge guiden:
+[Kenney platformer pack](https://www.kenney.nl/assets/platformer-pack-redux). I denn seksjonen bruker vi spritesheet_players.png
 
 Begynn med å dra spritesheetet inn i "FileSystem" vinduet i godot, som standard befinner det seg nederst til venstre.
 
@@ -54,8 +54,7 @@ Så går vi til Inspector igjen klikk på pilen ved Shape og velg new CapsuleSha
 
 Så er det bare å lagre karakteren vår med cmd+s. Og gi den et navn, f.eks. player.tscn
 
-Her kan du laste ned prosjektfilen for denne delen:
-[Prosjektfiler TODO: Ny Link](https://udeoslokommuneno-my.sharepoint.com/:u:/g/personal/ensva002_osloskolen_no/EQzrZE4YGwhKq6H8rIfId-wB85uFd7YCHRI3lHvvZoXULQ?e=0qiFoY)
+Ta gjerne en titt på eksempel prosjektet i **A - Resurser** 
 
 
 
