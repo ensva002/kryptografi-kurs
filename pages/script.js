@@ -43,9 +43,9 @@ function addButton(){
         if (toggle){
             document.documentElement.style.setProperty('--drawer-margin', "0pt")
             document.documentElement.style.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0.3)")
-            document.documentElement.style.setProperty('--toggle-left', "180pt")
+            document.documentElement.style.setProperty('--toggle-left', "200pt")
         }else{
-            document.documentElement.style.setProperty('--drawer-margin', "-180pt")
+            document.documentElement.style.setProperty('--drawer-margin', "-200pt")
             document.documentElement.style.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0)")
             document.documentElement.style.setProperty('--toggle-left', "0pt")
             
@@ -60,8 +60,8 @@ function addButton(){
         localStorage.setItem("mode", mode);
     }
     if (!mode){
-        document.documentElement.style.setProperty('--primary', "#111111")
-        document.documentElement.style.setProperty('--secondary', "#1e1f20")
+        document.documentElement.style.setProperty('--primary', "#222222")
+        document.documentElement.style.setProperty('--secondary', "#403340")
         document.documentElement.style.setProperty('--text', "#FFFFFF")
     }
     const overview = document.getElementById("overview")
@@ -70,8 +70,8 @@ function addButton(){
     modeButton.textContent = "🌓"
     modeButton.addEventListener("click",function(){
         if (mode){
-            document.documentElement.style.setProperty('--primary', "#111111")
-            document.documentElement.style.setProperty('--secondary', "#1e1f20")
+            document.documentElement.style.setProperty('--primary', "#222222")
+            document.documentElement.style.setProperty('--secondary', "#403340")
             document.documentElement.style.setProperty('--text', "#FFFFFF")
         }else{
             document.documentElement.style.setProperty('--primary', "#FFFFFF")
