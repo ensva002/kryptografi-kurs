@@ -1,8 +1,8 @@
 Guide er ikke ferdig skrevet enda, men ta en titt på nyeste version av eksempel prosjektet, Lys og Skygge eksempelet ligger i Lighting mappen
 
-![](../media/8_lys6.gif)
+*I dette eksempelet bruker vi [Kenney Sokoban](https://www.kenney.nl/assets/sokoban) asset pakken.*
 
-Her er assetene brukt i denne guiden: https://udeoslokommuneno-my.sharepoint.com/:u:/g/personal/ensva002_osloskolen_no/Ee0VB__cYcZHr8eARrlnxMMB7HEeYg7nl1y5PI3DEGLEYQ?e=dqevqb
+![](../media/8_lys6.gif)
 
 Her skal vi bruke noden PointLight2D, denne noden bruker en tekstur til å lyse opp elementer i samme Cull Maske (vi kommer tilbake til dette lenger ned i guiden.)
 Først må vi begynne med en bakgrunn som kan lyses opp, PointLight2D kan ikke lyse opp den grå bakgrunnen til Godot. I eksempelet bruker jeg en TileMap. Legg så til en PointLight2D node og legg light.png på tekstur atributtet light.png på tekstur feltet. 

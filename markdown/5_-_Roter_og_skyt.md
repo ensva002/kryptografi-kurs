@@ -1,3 +1,5 @@
+*I dette eksempelet bruker vi [Kenney top-down tanks](https://www.kenney.nl/assets/top-down-tanks-redux) asset pakken.*
+
 Nå skal vi legge til en kanon som skyter mot musepekeren. Vi begynner med å legge til en Node2D, i eksempelet heter den "kanonfeste", den skal posisjoneres midt på tanksen. under den legger vi til grafikken til kanonen. Den skal peke mot høyre, og bakerste delen skal overlappe kanonfeste.
 
 ![](../media/5_roter1.png)
