@@ -54,6 +54,7 @@ function addButton(){
     })
     content.insertBefore(menuButton,content.firstChild)
     // Dark mode
+    let codeStyle = document.getElementById("codeStyle")
     let mode = JSON.parse(localStorage.getItem("mode"));
     if (mode === null) {
         mode = true;
@@ -63,6 +64,7 @@ function addButton(){
         document.documentElement.style.setProperty('--primary', "#222222")
         document.documentElement.style.setProperty('--secondary', "#403340")
         document.documentElement.style.setProperty('--text', "#FFFFFF")
+        codeStyle.href = "prismdark.css"
     }
     const overview = document.getElementById("overview")
     let modeButton = document.createElement('button')
@@ -73,10 +75,12 @@ function addButton(){
             document.documentElement.style.setProperty('--primary', "#222222")
             document.documentElement.style.setProperty('--secondary', "#403340")
             document.documentElement.style.setProperty('--text', "#FFFFFF")
+            codeStyle.href = "prismdark.css" 
         }else{
             document.documentElement.style.setProperty('--primary', "#FFFFFF")
             document.documentElement.style.setProperty('--secondary', "#eef2f9")
             document.documentElement.style.setProperty('--text', "#000000")
+            codeStyle.href = "prism.css"
         }
         mode = !mode
         console.log(mode)

@@ -83,7 +83,7 @@ li{
     padding: 5pt;
 }
 
-code{
+/* code{
     background: var(--secondary);
     padding: 10pt;
     border-radius: 10px;
@@ -99,7 +99,7 @@ p code{
     border-radius: 5px;
     max-width: inherit;
     overflow-x: inherit;
-}
+} */
 
 #toggle{
     position: absolute;

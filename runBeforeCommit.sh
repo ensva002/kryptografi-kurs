@@ -26,8 +26,10 @@ do
 <head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="script.js"></script>
+    <link rel=stylesheet href=style.css>
+    <link id="codeStyle" rel=stylesheet href=prism.css>
+    <script type=module src=script.js></script>
+    <script type=module src=prism.js></script>
     <title>$title</title>
 </head>
 <body>
