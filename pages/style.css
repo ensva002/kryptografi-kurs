@@ -101,6 +101,16 @@ p code{
     overflow-x: inherit;
 } */
 
+p code{
+    background: var(--secondary);
+    border-radius: 5px;
+    padding: 0.75pt;
+    max-width: inherit;
+    overflow-x: inherit;
+}
+
+
+
 #toggle{
     position: absolute;
     left: -35px;

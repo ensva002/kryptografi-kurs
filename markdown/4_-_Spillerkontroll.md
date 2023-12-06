@@ -18,7 +18,6 @@ Her setter vi retning bassert på piltaster. vi putter det i en Vector2 variabel
 velocity = Vector2(move_direction * speed)
 ```
 er det samme som:
-
 ```gdscript
 velocity.x = move_direction.x * speed
 velocity.y = move_direction.y * speed
@@ -47,7 +46,7 @@ func _physics_process(delta):
 	
 ![](../media/4_spillerkontrol1.gif)
 
-I neste eksempel har jeg byttet ut `velocity = Vector2(move_direction * speed)`{.gdscript} med kode som bruker move_toward(A,B,C).  
+I neste eksempel har jeg byttet ut `velocity = Vector2(move_direction * speed)` med kode som bruker move_toward(A,B,C).  
 
 Move toward flytter et objekt gradvis mot et punkt.  
 

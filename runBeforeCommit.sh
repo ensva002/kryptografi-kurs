@@ -28,7 +28,7 @@ do
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel=stylesheet href=style.css>
-    <link id="codeStyle" rel=stylesheet href=prism.css>
+    <link id=\"codeStyle\" rel=stylesheet href=prism.css>
     <script type=module src=script.js></script>
     <script type=module src=prism.js></script>
     <title>$title</title>
