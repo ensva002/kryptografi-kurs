@@ -1,4 +1,3 @@
-# 0 - Installer Godot
 Velg en metode å installere på. OBS! ikke oppdater godot når du er midt i et prosjekt, dette kan føre til ekstra arbeid. Pass også på om du jobber i grupper, at alle har samme version installert.
 ## Metode 1: Installer fra nettside
 Gå til https://godotengine.org/ og last ned ønsket version.
