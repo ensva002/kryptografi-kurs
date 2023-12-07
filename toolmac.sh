@@ -23,8 +23,7 @@ while true; do
 
     # Extract the page content
     #content=$(gtail -c +110 "$filepath" | ghead -c -14)
-    content=$(cat $dir/$filename.html)
-
+    #content=$(cat $dir/$filename.html)
 
     # Create the new HTML structure with the extracted content and title
     new_content="<!DOCTYPE html>
@@ -43,7 +42,7 @@ while true; do
         <div id=\"canvas\">
             <div id=\"content\">
                 <h1>$title</h1>
-                $content
+                $(cat $dir/$filename.html)
             </div>
         </div>
     </body>
@@ -53,17 +52,17 @@ while true; do
         echo "$new_content" > "$dest/$filename.html"
 
         # Remove the original file
-        rm "$dir/$filename.html"
+       # rm "$dir/$filename.html"
 
 
     #============ POPULATE MENU ============
-    dir="pages/"
+    dirMenu="pages/"
 
     # Start of JSON
     echo '{ "files": [' > pagelist.json
 
     # Find HTML files, exclude index.html, sort them, and then format as JSON
-    find $dir -name "*.html" ! -name "index.html" | sort -V | awk -v ORS=', ' '{ sub(".*/",""); print "\""$0"\""}' >> pagelist.json
+    find $dirMenu -name "*.html" ! -name "index.html" | sort -V | awk -v ORS=', ' '{ sub(".*/",""); print "\""$0"\""}' >> pagelist.json
 
     # End of JSON
     gsed -i '$ s/..$/] }/' pagelist.json
