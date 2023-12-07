@@ -14,8 +14,7 @@ do
     filename=$(basename "$filepath" .md)
 
     pandoc -f markdown $filepath > $dir/$filename.html
-    sed -i 's/class="gdscript"/class="language-gdscript"/g' $dir/$filename.html
-
+    sed -E -i 's/<pre\sclass="([^"]*)">/<pre class="language-\1">/g' $dir/$filename.html
     # Replace underscores with spaces
     title=${filename//_/ }
 
@@ -51,7 +50,8 @@ do
     echo "$new_content" > "$dest/$filename.html"
 
     # Remove the original file
-    #rm "$filepath"
+        rm "$dir/$filename.html"
+
 done
 
 #============ POPULATE MENU ============
