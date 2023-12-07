@@ -8,16 +8,19 @@ dir="markdown/"
 dest="pages/"
 
 # Loop over each HTML file in the directory
-for filepath in "$dir"/*.html
+for filepath in "$dir"/*.md
 do
     # Extract the filename from the filepath
-    filename=$(basename "$filepath" .html)
+    filename=$(basename "$filepath" .md)
+
+    pandoc -f markdown $filepath > $dir/$filename.html
 
     # Replace underscores with spaces
     title=${filename//_/ }
 
     # Extract the page content
-    content=$(gtail -c +110 "$filepath" | ghead -c -14)
+    #content=$(gtail -c +110 "$filepath" | ghead -c -14)
+    content=$(cat $dir/$filename.html)
 
 
     # Create the new HTML structure with the extracted content and title
