@@ -14,11 +14,11 @@ koblet til seg. Her skal vi koble signalet til Button sitt script. Noden
 som sender signalet er markert med blå tekst, det er ingenting i veien
 for at en node kan sende signal til sitt eget script. Nå skal denne
 koden ha dukket opp i button scriptet:</p>
-<pre class="gdscript"><code>func _on_pressed():
+<pre class="language-gdscript"><code>func _on_pressed():
   pass</code></pre>
 <p>Alt du skriver i denne funksjonen kjører hver gang du trykker på
 knappen. I dette tilfellet ønsker vi å bytte sene, så da kan vi skrive:
 func _on_pressed():</p>
-<pre class="gdscript"><code>  get_tree().change_scene_to_file(&quot;res://Platformer/level1.tscn&quot;)</code></pre>
+<pre class="language-gdscript"><code>  get_tree().change_scene_to_file(&quot;res://Platformer/level1.tscn&quot;)</code></pre>
 <p>Denne laster inn level1.tscn som ligger i mappen Platformer</p>
 <p><img src="../media/7_signal1.gif" /></p>

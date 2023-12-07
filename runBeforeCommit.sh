@@ -14,6 +14,7 @@ do
     filename=$(basename "$filepath" .md)
 
     pandoc -f markdown $filepath > $dir/$filename.html
+    sed -i 's/class="gdscript"/class="language-gdscript"/g' $dir/$filename.html
 
     # Replace underscores with spaces
     title=${filename//_/ }

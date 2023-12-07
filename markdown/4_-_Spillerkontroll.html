@@ -4,7 +4,7 @@ tanks</a> asset pakken.</em></p>
 <p>Så lenge karakteren vår er en CharacterBody2D, så er alt vi trenger
 for å bevege den å sette velocity og bruke move_and_slide() i
 _physics_process(delta) funksjonen.</p>
-<pre class="gdscript"><code>extends CharacterBody2D
+<pre class="language-gdscript"><code>extends CharacterBody2D
 
 func _physics_process(delta):
   velocity.x = 300
@@ -14,12 +14,12 @@ func _physics_process(delta):
 Vector2 variabel, den defineres som tom hver gang i starten av
 funksjonen, slik at karakteren stopper om vi ikke holder inne en tast.
 til slutt ganger vi retning med fart og gir resultatet til velocity.</p>
-<pre class="gdscript"><code>velocity = Vector2(move_direction * speed)</code></pre>
+<pre class="language-gdscript"><code>velocity = Vector2(move_direction * speed)</code></pre>
 <p>er det samme som:</p>
-<pre class="gdscript"><code>velocity.x = move_direction.x * speed
+<pre class="language-gdscript"><code>velocity.x = move_direction.x * speed
 velocity.y = move_direction.y * speed</code></pre>
 <hr />
-<pre class="gdscript"><code>
+<pre class="language-gdscript"><code>
 var speed = 200
 func _physics_process(delta):
   var move_direction = Vector2.ZERO
@@ -37,16 +37,16 @@ func _physics_process(delta):
   move_and_slide()
 </code></pre>
 <p><img src="../media/4_spillerkontrol1.gif" /></p>
-<p>I neste eksempel har jeg byttet ut <code
-class="gdscript">velocity = Vector2(move_direction * speed)</code> med
-kode som bruker move_toward(A,B,C).</p>
+<p>I neste eksempel har jeg byttet ut
+<code>velocity = Vector2(move_direction * speed)</code> med kode som
+bruker move_toward(A,B,C).</p>
 <p>Move toward flytter et objekt gradvis mot et punkt.</p>
 <p>A: punktet den flytter seg fra</p>
 <p>B: punktet den skal til</p>
 <p>C: akselrasjon og brems (ease out/in)</p>
 <p>Om vi og legger til kode som roterer grafikken får vi en ganske
 naturlig bevegelse.</p>
-<pre class="gdscript"><code>velocity.x = move_toward(velocity.x, move_direction.x * speed, 5)
+<pre class="language-gdscript"><code>velocity.x = move_toward(velocity.x, move_direction.x * speed, 5)
 velocity.y = move_toward(velocity.y, move_direction.y * speed, 5)</code></pre>
 <p><img src="../media/4_spillerkontrol2.gif" /></p>
 <p>om vi ønsker at bilen skal kunne gå diagonalt må vi bare bytte ut

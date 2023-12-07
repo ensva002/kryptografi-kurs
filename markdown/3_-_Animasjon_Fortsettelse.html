@@ -19,13 +19,13 @@ animasjonene. Vi skriver koden vår under move_and_slide() funksjonen. Vi
 starter med en test for å se om karakteren beveger seg vertikalt, og
 dersom den gjør det spiller vi av “jump” animasjonen, om den ikke
 stemmer bytter vi til “idle”</p>
-<pre class="gdscript"><code>if velocity.y != 0:
+<pre class="language-gdscript"><code>if velocity.y != 0:
   anim.play(&quot;jump&quot;)
 else:
   anim.play(&quot;idle&quot;)</code></pre>
 <p>Alt vi trenger for å legge til en løpeanimasjon her er å legge til en
 elif som sjekker om vi beveger oss horisontalt.</p>
-<pre class="gdscript"><code>if velocity.y != 0:
+<pre class="language-gdscript"><code>if velocity.y != 0:
   anim.play(&quot;jump&quot;)
 elif velocity.x != 0:
   anim.play(&quot;run&quot;)
@@ -41,7 +41,7 @@ gjøre dette med AnimatedSprite2D.</p>
 vi trenger å gjøre nå er å sjekke hvilken vei karakteren går NÅR
 spilleren holder nede en knapp, og slå på Flip H om vi går til
 venstre.</p>
-<pre class="gdscript"><code>if velocity.x &lt; 0:
+<pre class="language-gdscript"><code>if velocity.x &lt; 0:
   anim.flip_h = true
 else:
   anim.flip_h = false</code></pre>
