@@ -56,6 +56,11 @@ function addButton(){
     // Dark mode
     let codeStyle = document.getElementById("codeStyle")
     let mode = JSON.parse(localStorage.getItem("mode"));
+    let modeButton = document.createElement('button')
+    modeButton.id = "mode"
+    let btnContentLight = "🌘"
+    let btnContentDark = "☀️"
+    modeButton.textContent = btnContentLight
     if (mode === null) {
         mode = true;
         localStorage.setItem("mode", mode);
@@ -65,22 +70,22 @@ function addButton(){
         document.documentElement.style.setProperty('--secondary', "#403340")
         document.documentElement.style.setProperty('--text', "#FFFFFF")
         codeStyle.href = "prismdark.css"
+        modeButton.textContent = btnContentDark
     }
     const overview = document.getElementById("overview")
-    let modeButton = document.createElement('button')
-    modeButton.id = "mode"
-    modeButton.textContent = "🌓"
     modeButton.addEventListener("click",function(){
         if (mode){
             document.documentElement.style.setProperty('--primary', "#222222")
             document.documentElement.style.setProperty('--secondary', "#403340")
             document.documentElement.style.setProperty('--text', "#FFFFFF")
             codeStyle.href = "prismdark.css" 
+            modeButton.textContent = btnContentDark
         }else{
             document.documentElement.style.setProperty('--primary', "#FFFFFF")
             document.documentElement.style.setProperty('--secondary', "#eef2f9")
             document.documentElement.style.setProperty('--text', "#000000")
             codeStyle.href = "prism.css"
+            modeButton.textContent = btnContentLight
         }
         mode = !mode
         console.log(mode)
@@ -88,6 +93,8 @@ function addButton(){
         console.log(localStorage.getItem("mode"))
     })
     overview.insertBefore(modeButton,overview.firstChild)
+    //add copy button
+
 }
 
 
