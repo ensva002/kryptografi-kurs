@@ -1,4 +1,4 @@
-Første gang du starter Godot blir du spurt om du vil åpne *asset biblioteket*, kanseler dette. Så klikker du på knappen oppe til venstre `+ New`, velg mappen du vil ha prosjektet i, så skriver du inn prosjektnavnet og trykker på `Create & Edit`
+Første gang du starter Godot blir du spurt om du vil åpne *asset biblioteket*, kanseller dette. Så klikker du på knappen oppe til venstre `+ New`, velg mappen du vil ha prosjektet i, så skriver du inn prosjektnavnet og trykker på `Create & Edit`
 
 ![](../media/01-first.gif) 
 
@@ -10,9 +10,9 @@ Oppe til venstre ser du `Scene` vinduet, her vil du etterhvert se alle nodene so
 
 Nede til venstre ser du `File System`. Her vises alle prosjektfilene dine, alle filer som ligger i samme mappe som prosjektet.
 
-Helt til høyre ser du `Inspector`. Her vil du se alle egenskapene du kan endre på når du har valgt en node. F.eks. possisjon, størrelse, hvilke tekstur den bruker hvilken lyd den spiller av osv osv.
+Helt til høyre ser du `Inspector`. Her vil du se alle egenskapene du kan endre på når du har valgt en node. F.eks. posisjon, størrelse, hvilke tekstur den bruker hvilken lyd den spiller av osv osv.
 
-I midten ser du virewporten din. Nå viser den en tom 3D scene, du kan bytte mellom hva som vises med knappene helt øverst i Godot vinduet: `2D` `3D` og `Script`. På toppen av viewporten er det en rad med verktøy, denne er dynamisk slik at verktøyene byttes ut bassert på hva du driver med. Men her er de du kommer til å bruke mest:
+I midten ser du viewporten din. Nå viser den en tom 3D scene, du kan bytte mellom hva som vises med knappene helt øverst i Godot vinduet: `2D` `3D` og `Script`. På toppen av viewporten er det en rad med verktøy, denne er dynamisk slik at verktøyene byttes ut basert på hva du driver med. Men her er de du kommer til å bruke mest:
 
 ![](../media/01-modify.gif)
 

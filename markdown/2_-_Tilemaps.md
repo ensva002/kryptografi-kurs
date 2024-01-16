@@ -3,7 +3,7 @@ Vi fortsetter med [Kenney platformer pack](https://www.kenney.nl/assets/platform
 
 ![](../media/2_Tile4.png)
 
-Vi starter med en ny tom 2D sene. Her velger vi å starte med en 2D node, dette er en grunnlegende node med relativt få atributter. Vi starter med denne ettersom denne scenen skal ha flere scener i seg og denne egner seg godt som en rot-node.
+Vi starter med en ny tom 2D sene. Her velger vi å starte med en 2D node, dette er en grunnleggende node med relativt få attributter. Vi starter med denne ettersom denne scenen skal ha flere scener i seg og denne egner seg godt som en rot-node.
 
 ![](../media/2_Tile5.gif)
 
@@ -15,7 +15,7 @@ I inspector klikker du på pilen ned ved Tile Set, velger New TileSet og klikker
 
 ![](../media/2_Tile1.png)
 
-Velg TileSet fanen nederst i vinduet, lag et nytt atlas, og dra spritesheet_ground.png til Texture <empty>. Klikk på Yes når du blir spurt om du automatisk vil lage tiles i det nye atlasset.
+Velg TileSet fanen nederst i vinduet, lag et nytt atlas, og dra kolisjons formspritesheet_ground.png til Texture <empty>. Klikk på Yes når du blir spurt om du automatisk vil lage tiles i det nye atlaset.
 
 ![](../media/2_Tile6.gif)
 
@@ -27,7 +27,7 @@ Lagre senen som f.eks level1.tscn. Marker Node2D, og dra spilleren vi lagde i de
 
 ![](../media/2_Tile8.gif)
 
-Vi kan nå kjøre vår første test av spillet. Klikk på Play øverst i høyre i godot vinduet, og klikk på Select Curent for å sette denne senen som hoved senen. hovedsenen er den som starter når man starter spillet, og er markert med blått i FileSystem vinduet. Du kan endre dette senere ved å høyreklikke på en annen sene og velge Set As Main Scene.
+Vi kan nå kjøre vår første test av spillet. Klikk på Play øverst i høyre i Godot vinduet, og klikk på Select Current for å sette denne senen som hoved senen. hovedscenen er den som starter når man starter spillet, og er markert med blått i FileSystem vinduet. Du kan endre dette senere ved å høyreklikke på en annen sene og velge Set As Main Scene.
 
 ![](../media/2_Tile9.gif)
 
@@ -47,12 +47,12 @@ Marker TileMap, klikk på TIleSet i Inspector og legg til et nytt element under 
 
 ![](../media/2_Tile13.gif)
 
-Herfra kan vi velge en tile, bla ned til Physics og velge det nye laget vi lagde. Du kan trykke på F for å fylle hele tilen med en kolisjonsform. Herfra kan du bruke node verktøyene for å sette opp formen slik at den matcher grafikken.
+Herfra kan vi velge en tile, bla ned til Physics og velge det nye laget vi lagde. Du kan trykke på F for å fylle hele tilen med en kollisjonsform. Herfra kan du bruke node verktøyene for å sette opp formen slik at den matcher grafikken.
 
 ![](../media/2_Tile16.png)
 ![](../media/2_Tile14.gif)
 
-Nå kan vi teste spillet igjen, og bevege karakteren med piltastene og mellomromstasten. Tips, du kan gå på Debug og slå på Visible collision shapes for å se om du har glemt å legge til kolisjon på noen elementer.
+Nå kan vi teste spillet igjen, og bevege karakteren med piltastene og mellomromstasten. Tips, du kan gå på Debug og slå på Visible collision shapes for å se om du har glemt å legge til kollisjon på noen elementer.
 
 ![](../media/2_Tile15.gif)
 

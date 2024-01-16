@@ -26,10 +26,10 @@ func _physics_process(delta):
   velocity.x = 300
   move_and_slide()</code></pre>
 <p><img src="../media/4_spillerkontrol4.gif" /></p>
-<p>Her setter vi retning bassert på piltaster. vi putter det i en
-Vector2 variabel, den defineres som tom hver gang i starten av
-funksjonen, slik at karakteren stopper om vi ikke holder inne en tast.
-til slutt ganger vi retning med fart og gir resultatet til velocity.</p>
+<p>Her setter vi retning basert på piltaster. vi putter det i en Vector2
+variabel, den defineres som tom hver gang i starten av funksjonen, slik
+at karakteren stopper om vi ikke holder inne en tast. til slutt ganger
+vi retning med fart og gir resultatet til velocity.</p>
 <pre class="language-gdscript"><code>velocity = Vector2(move_direction * speed)</code></pre>
 <p>er det samme som:</p>
 <pre class="language-gdscript"><code>velocity.x = move_direction.x * speed
@@ -59,7 +59,7 @@ bruker move_toward(A,B,C).</p>
 <p>Move toward flytter et objekt gradvis mot et punkt.</p>
 <p>A: punktet den flytter seg fra</p>
 <p>B: punktet den skal til</p>
-<p>C: akselrasjon og brems (ease out/in)</p>
+<p>C: akselerasjon og brems (ease out/in)</p>
 <p>Om vi og legger til kode som roterer grafikken får vi en ganske
 naturlig bevegelse.</p>
 <pre class="language-gdscript"><code>velocity.x = move_toward(velocity.x, move_direction.x * speed, 5)

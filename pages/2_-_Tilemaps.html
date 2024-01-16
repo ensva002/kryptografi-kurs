@@ -22,7 +22,7 @@ platformer pack</a>, som vi gjorde i forrige seksjon. dra
 FileSystem vinduet.</p>
 <p><img src="../media/2_Tile4.png" /></p>
 <p>Vi starter med en ny tom 2D sene. Her velger vi å starte med en 2D
-node, dette er en grunnlegende node med relativt få atributter. Vi
+node, dette er en grunnleggende node med relativt få attributter. Vi
 starter med denne ettersom denne scenen skal ha flere scener i seg og
 denne egner seg godt som en rot-node.</p>
 <p><img src="../media/2_Tile5.gif" /></p>
@@ -34,8 +34,8 @@ størrelsen på tiles-ene i ditt tilesheet. I dette eksempelet bruker vi
 128x128 piksler pr tile.</p>
 <p><img src="../media/2_Tile1.png" /></p>
 <p>Velg TileSet fanen nederst i vinduet, lag et nytt atlas, og dra
-spritesheet_ground.png til Texture <empty>. Klikk på Yes når du blir
-spurt om du automatisk vil lage tiles i det nye atlasset.</p>
+kolisjons formspritesheet_ground.png til Texture <empty>. Klikk på Yes
+når du blir spurt om du automatisk vil lage tiles i det nye atlaset.</p>
 <p><img src="../media/2_Tile6.gif" /></p>
 <p>Nå kan du velge TileMap fanen og begynne å tegne opp en level med
 tiles. Lag en bakken stor nok til at karakteren din kan løpe litt frem
@@ -47,10 +47,11 @@ firkanten, enn så lenge så er dette alt vi kan se når vi kjører
 spillet.</p>
 <p><img src="../media/2_Tile8.gif" /></p>
 <p>Vi kan nå kjøre vår første test av spillet. Klikk på Play øverst i
-høyre i godot vinduet, og klikk på Select Curent for å sette denne senen
-som hoved senen. hovedsenen er den som starter når man starter spillet,
-og er markert med blått i FileSystem vinduet. Du kan endre dette senere
-ved å høyreklikke på en annen sene og velge Set As Main Scene.</p>
+høyre i Godot vinduet, og klikk på Select Current for å sette denne
+senen som hoved senen. hovedscenen er den som starter når man starter
+spillet, og er markert med blått i FileSystem vinduet. Du kan endre
+dette senere ved å høyreklikke på en annen sene og velge Set As Main
+Scene.</p>
 <p><img src="../media/2_Tile9.gif" /></p>
 <p>Spillet er helt statisk nå, så det er på tide å begynne å legge til
 kode. Åpne spiller senen, velg CharacterBody2D og klikk på arket med en
@@ -73,13 +74,13 @@ Select i stedet for Setup.</p>
 <p><img src="../media/2_Tile13.gif" /></p>
 <p>Herfra kan vi velge en tile, bla ned til Physics og velge det nye
 laget vi lagde. Du kan trykke på F for å fylle hele tilen med en
-kolisjonsform. Herfra kan du bruke node verktøyene for å sette opp
+kollisjonsform. Herfra kan du bruke node verktøyene for å sette opp
 formen slik at den matcher grafikken.</p>
 <p><img src="../media/2_Tile16.png" /> <img
 src="../media/2_Tile14.gif" /></p>
 <p>Nå kan vi teste spillet igjen, og bevege karakteren med piltastene og
 mellomromstasten. Tips, du kan gå på Debug og slå på Visible collision
-shapes for å se om du har glemt å legge til kolisjon på noen
+shapes for å se om du har glemt å legge til kollisjon på noen
 elementer.</p>
 <p><img src="../media/2_Tile15.gif" /></p>
 <p>Men hvor er alle animasjonene vi lagde i del 1? Spillet vet ikke når

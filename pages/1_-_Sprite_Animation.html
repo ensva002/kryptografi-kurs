@@ -18,7 +18,7 @@
 gjennom resten av guiden. Last ned denne asset-pakken for å følge
 guiden: <a
 href="https://www.kenney.nl/assets/platformer-pack-redux">Kenney
-platformer pack</a>. I denn seksjonen bruker vi
+platformer pack</a>. I denne seksjonen bruker vi
 spritesheet_players.png</p>
 <p>Begynn med å dra spritesheetet inn i “FileSystem” vinduet i godot,
 som standard befinner det seg nederst til venstre.</p>
@@ -47,13 +47,13 @@ sprite frame resursen.</p>
 <p>Nå skal SpriteFrames fanen ha åpnet seg nede på skjermen. Her kan vi
 lage alle animasjonene til karakteren vår. Klikk på knappen med et lite
 rutenett for å legge til nye bilder fra et spritesheet til animasjonen,
-velg filen vi lastet ned i starten og juster parameterene oppe i høyre
+velg filen vi lastet ned i starten og juster parametrene oppe i høyre
 hjørnet slik at rutenettet passer karakterene. i dette tilfellet vil vi
 ha 8 x 8. Velg to bilder fra en løpe animasjon og klikk på Add Frames.
 De to bildene vil legge seg inn i animasjonen. over dem ser du knapper
-for å kontrolere avspillingen av animasjonen. Vi vil at animasjonen skal
-loope så pass på at de looping er på (blå = på, hvit = av). det er de to
-pilene som peker i sirkel til venstre for FPS.</p>
+for å kontrollere avspillingen av animasjonen. Vi vil at animasjonen
+skal “loope” så pass på at de looping er på (blå = på, hvit = av). det
+er de to pilene som peker i sirkel til venstre for FPS.</p>
 <p><img src="../media/1_sprite7.gif" /></p>
 <p>Dobbeltklikk på animasjonsnavnet, det heter nå “default” og gi den et
 nytt navn, som “run”. Animasjonene bør ha korte og forklarende navn så
@@ -72,7 +72,7 @@ AnimatedSprite2D høyere opp. pass på at du har AnimatedSprite valgt og
 ikke CharacterBody2D, det er kun grafikken vi ønsker å flytte.</p>
 <p><img src="../media/1_sprite11.gif" /></p>
 <p>Om du ved et uhell har flyttet CharacterBody2D i stedet marker den
-igjen, gå til inspektoren og reset possisjon under Transform.</p>
+igjen, gå til inspektøren og reset posisjon under Transform.</p>
 <p><img src="../media/1_sprite5.gif" /></p>
 <p>Varseltrekanten advarer oss om at CharacterBody2D ikke har en
 “shape”. Det finnes flere bodies, som StaticBody og RigidBody, og alle
@@ -82,7 +82,7 @@ ditt skal nå se slik ut.</p>
 <p><img src="../media/1_sprite14.png" /></p>
 <p>Så går vi til Inspector igjen klikk på pilen ved Shape og velg new
 CapsuleShape2D. Så juster den sånn at den røflig passer karakteren vår.
-Denne bestemmer hvor kolisjoner skjer med karakteren, med bakken,
+Denne bestemmer hvor kollisjoner skjer med karakteren, med bakken,
 fiender, osv.</p>
 <p><img src="../media/1_sprite8.gif" /></p>
 <p>Så er det bare å lagre karakteren vår med cmd+s. Og gi den et navn,

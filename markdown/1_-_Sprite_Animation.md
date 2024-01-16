@@ -1,6 +1,6 @@
 Vi begynner med en enkel animasjon så vi har en karakter å bruke gjennom resten av guiden. 
 Last ned denne asset-pakken for å følge guiden:
-[Kenney platformer pack](https://www.kenney.nl/assets/platformer-pack-redux). I denn seksjonen bruker vi spritesheet_players.png
+[Kenney platformer pack](https://www.kenney.nl/assets/platformer-pack-redux). I denne seksjonen bruker vi spritesheet_players.png
 
 Begynn med å dra spritesheetet inn i "FileSystem" vinduet i godot, som standard befinner det seg nederst til venstre.
 
@@ -22,7 +22,7 @@ Med AnimatedSprite2D valgt, gå til Inspector, vanligvis på høyre side, åpne 
 
 ![](../media/1_sprite2.gif)
 
-Nå skal SpriteFrames fanen ha åpnet seg nede på skjermen. Her kan vi lage alle animasjonene til karakteren vår. Klikk på knappen med et lite rutenett for å legge til nye bilder fra et spritesheet til animasjonen, velg filen vi lastet ned i starten og juster parameterene oppe i høyre hjørnet slik at rutenettet passer karakterene. i dette tilfellet vil vi ha 8 x 8. Velg to bilder fra en løpe animasjon og klikk på Add Frames. De to bildene vil legge seg inn i animasjonen. over dem ser du knapper for å kontrolere avspillingen av animasjonen. Vi vil at animasjonen skal loope så pass på at de looping er på (blå = på, hvit = av). det er de to pilene som peker i sirkel til venstre for FPS.
+Nå skal SpriteFrames fanen ha åpnet seg nede på skjermen. Her kan vi lage alle animasjonene til karakteren vår. Klikk på knappen med et lite rutenett for å legge til nye bilder fra et spritesheet til animasjonen, velg filen vi lastet ned i starten og juster parametrene oppe i høyre hjørnet slik at rutenettet passer karakterene. i dette tilfellet vil vi ha 8 x 8. Velg to bilder fra en løpe animasjon og klikk på Add Frames. De to bildene vil legge seg inn i animasjonen. over dem ser du knapper for å kontrollere avspillingen av animasjonen. Vi vil at animasjonen skal "loope" så pass på at de looping er på (blå = på, hvit = av). det er de to pilene som peker i sirkel til venstre for FPS.
 
 ![](../media/1_sprite7.gif)
 
@@ -40,7 +40,7 @@ Først, vi ønsker at karakteren skal være så nær sentrum som mulig, så vi f
 
 ![](../media/1_sprite11.gif)
 
-Om du ved et uhell har flyttet CharacterBody2D i stedet marker den igjen, gå til inspektoren og reset possisjon under Transform.
+Om du ved et uhell har flyttet CharacterBody2D i stedet marker den igjen, gå til inspektøren og reset posisjon under Transform.
 
 ![](../media/1_sprite5.gif)
 
@@ -48,7 +48,7 @@ Varseltrekanten advarer oss om at CharacterBody2D ikke har en "shape". Det finne
 
 ![](../media/1_sprite14.png)
 
-Så går vi til Inspector igjen klikk på pilen ved Shape og velg new CapsuleShape2D. Så juster den sånn at den røflig passer karakteren vår. Denne bestemmer hvor kolisjoner skjer med karakteren, med bakken, fiender, osv.
+Så går vi til Inspector igjen klikk på pilen ved Shape og velg new CapsuleShape2D. Så juster den sånn at den røflig passer karakteren vår. Denne bestemmer hvor kollisjoner skjer med karakteren, med bakken, fiender, osv.
 
 ![](../media/1_sprite8.gif)
 

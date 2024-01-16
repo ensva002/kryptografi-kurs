@@ -12,7 +12,7 @@ func _physics_process(delta):
 	
 ![](../media/4_spillerkontrol4.gif)
 
-Her setter vi retning bassert på piltaster. vi putter det i en Vector2 variabel, den defineres som tom hver gang i starten av funksjonen, slik at karakteren stopper om vi ikke holder inne en tast. til slutt ganger vi retning med fart og gir resultatet til velocity.
+Her setter vi retning basert på piltaster. vi putter det i en Vector2 variabel, den defineres som tom hver gang i starten av funksjonen, slik at karakteren stopper om vi ikke holder inne en tast. til slutt ganger vi retning med fart og gir resultatet til velocity.
 
 ```gdscript
 velocity = Vector2(move_direction * speed)
@@ -54,7 +54,7 @@ A: punktet den flytter seg fra
 
 B: punktet den skal til  
 
-C: akselrasjon og brems (ease out/in)  
+C: akselerasjon og brems (ease out/in)  
 
 Om vi og legger til kode som roterer grafikken får vi en ganske naturlig bevegelse.
 
