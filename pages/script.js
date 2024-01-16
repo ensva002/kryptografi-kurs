@@ -4,8 +4,7 @@ fetch('../pagelist.json')
         const overview = document.createElement('div');
         overview.id = 'overview';
         document.body.prepend(overview);
-        const currentPage = decodeURIComponent(window.location.pathname.split('/').pop());
-        //const currentPage = window.location.pathname.split('/').pop();
+        const currentPage = decodeURIComponent(decodeURIComponent(window.location.pathname.split('/').pop()));
         console.log(currentPage)
         data.files.forEach(file => {
             const fileName = file.replace('.html', '').replace(/_/g, ' ');
