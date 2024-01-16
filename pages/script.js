@@ -12,7 +12,7 @@ fetch('../pagelist.json')
             link.href = `${file}`;
             link.textContent = fileName;
             listItem.appendChild(link);
-            if (file === currentPage) {
+            if (file == currentPage) {
                 listItem.classList.add('current');
             }
             overview.appendChild(listItem);
