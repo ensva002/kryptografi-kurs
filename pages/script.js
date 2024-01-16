@@ -4,7 +4,7 @@ fetch('../pagelist.json')
         const overview = document.createElement('div');
         overview.id = 'overview';
         document.body.prepend(overview);
-        const currentPage = window.location.pathname.split('/').pop();
+        const currentPage = decodeURIComponent(window.location.pathname.split('/').pop());
         data.files.forEach(file => {
             const fileName = file.replace('.html', '').replace(/_/g, ' ');
             const listItem = document.createElement('li');
@@ -12,9 +12,7 @@ fetch('../pagelist.json')
             link.href = `${file}`;
             link.textContent = fileName;
             listItem.appendChild(link);
-            console.log(file)
-            console.log(currentPage)
-            if (file === decodeURIComponent(currentPage)) {
+            if (file === currentPage) {
                 listItem.classList.add('current');
             }
             overview.appendChild(listItem);
