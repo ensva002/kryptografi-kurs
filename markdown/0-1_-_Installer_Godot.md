@@ -1,7 +1,7 @@
 Velg en metode å installere på. OBS! ikke oppdater godot når du er midt i et prosjekt, dette kan føre til ekstra arbeid. Pass også på om du jobber i grupper, at alle har samme version installert.
 
 ## Metode 1: Installer fra nettside
-Gå til https://godotengine.org/ og last ned ønsket version.
+Gå til [https://godotengine.org/](https://godotengine.org/) og last ned ønsket version.
 
 ![](../media/0_install_1.gif)
 
@@ -18,5 +18,5 @@ brew install godot
 ![](../media/0_install_2.gif)
 
 ## Andre metoder
-Du kan laste ned godot fra Steam: https://store.steampowered.com/app/404790/Godot_Engine/ men dette er ikke anbefalt etter som du har mindre kontroll over når oppdateringer skjer.
-Godot kan også kjøres direkte i nettleseren: https://editor.godotengine.org/releases/latest/ Dette er bare en preview og er ikke helt stabil, så denne metoden er ikke anbefalt å bruke i et prosjekt.
+Du kan laste ned godot fra [Steam](https://store.steampowered.com/app/404790/Godot_Engine/), men dette er ikke anbefalt etter som du har mindre kontroll over når oppdateringer skjer.
+Godot kan også kjøres direkte i [nettleseren](https://editor.godotengine.org/releases/latest/).  Dette er bare en preview og er ikke helt stabil, så denne metoden er ikke anbefalt å bruke i et prosjekt.
