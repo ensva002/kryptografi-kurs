@@ -66,33 +66,33 @@ function addButton(){
         localStorage.setItem("mode", mode);
     }
     if (!mode){
-        document.documentElement.style.setProperty('--primary', "#222222")
-        document.documentElement.style.setProperty('--secondary', "#403340")
-        document.documentElement.style.setProperty('--text', "#FFFFFF")
-        codeStyle.href = "prismdark.css"
-        modeButton.textContent = btnContentDark
+        setDarkMode()
     }
     const overview = document.getElementById("overview")
     modeButton.addEventListener("click",function(){
         if (mode){
-            document.documentElement.style.setProperty('--primary', "#222222")
-            document.documentElement.style.setProperty('--secondary', "#403340")
-            document.documentElement.style.setProperty('--text', "#FFFFFF")
-            codeStyle.href = "prismdark.css" 
-            modeButton.textContent = btnContentDark
+            setDarkMode()
         }else{
-            document.documentElement.style.setProperty('--primary', "#FFFFFF")
-            document.documentElement.style.setProperty('--secondary', "#eef2f9")
-            document.documentElement.style.setProperty('--text', "#000000")
-            codeStyle.href = "prism.css"
-            modeButton.textContent = btnContentLight
+            setLightMode()
         }
         mode = !mode
         localStorage.setItem("mode",mode)
     })
+    function setDarkMode(){
+        document.documentElement.style.setProperty('--primary', "#222222")
+        document.documentElement.style.setProperty('--secondary', "#403340")
+        document.documentElement.style.setProperty('--text', "#FFFFFF")
+        codeStyle.href = "prismdark.css" 
+        modeButton.textContent = btnContentDark
+    }
+    
+    function setLightMode(){
+        document.documentElement.style.setProperty('--primary', "#FFFFFF")
+        document.documentElement.style.setProperty('--secondary', "#eef2f9")
+        document.documentElement.style.setProperty('--text', "#000000")
+        codeStyle.href = "prism.css"
+        modeButton.textContent = btnContentLight
+    }
     overview.insertBefore(modeButton,overview.firstChild)
     //add copy button
-
 }
-
-
