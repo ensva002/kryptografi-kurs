@@ -88,9 +88,7 @@ function addButton(){
             modeButton.textContent = btnContentLight
         }
         mode = !mode
-        console.log(mode)
         localStorage.setItem("mode",mode)
-        console.log(localStorage.getItem("mode"))
     })
     overview.insertBefore(modeButton,overview.firstChild)
     //add copy button
