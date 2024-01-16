@@ -10,7 +10,7 @@ Pakk ut .zip filen og dra godot til Applications mappen, evt. om du ikke har fik
 ![](../media/0_install_3.gif)
 
 ## Metode 2: Installer via Homebrew i terminal
-Dersom du har Homebrew installert kan du skrive denne kommandoen i terminalen for å instalere:
+Dersom du har [Homebrew](https://brew.sh) installert kan du skrive denne kommandoen i terminalen for å instalere:
 ```sh
 brew install godot
 ```
