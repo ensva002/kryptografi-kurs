@@ -39,15 +39,16 @@ function addButton(){
     menuButton.id = "toggle"
     menuButton.textContent = "☰"
     let toggle = true
+    const docStyle = document.documentElement.style
     menuButton.addEventListener("click",function(){
         if (toggle){
-            document.documentElement.style.setProperty('--drawer-margin', "0pt")
-            document.documentElement.style.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0.3)")
-            document.documentElement.style.setProperty('--toggle-left', "200pt")
+            docStyle.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0.3)")
+            docStyle.setProperty('--toggle-left', "200pt")
+            docStyle.setProperty('--drawer-margin', "0pt")
         }else{
-            document.documentElement.style.setProperty('--drawer-margin', "-200pt")
-            document.documentElement.style.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0)")
-            document.documentElement.style.setProperty('--toggle-left', "0pt")
+            docStyle.setProperty('--drawer-margin', "-200pt")
+            docStyle.setProperty('--drawer-shadow', "10px 0px 30px 0px rgba(0,0,0,0)")
+            docStyle.setProperty('--toggle-left', "0pt")
             
         }
         toggle = !toggle
@@ -79,17 +80,17 @@ function addButton(){
         localStorage.setItem("mode",mode)
     })
     function setDarkMode(){
-        document.documentElement.style.setProperty('--primary', "#222222")
-        document.documentElement.style.setProperty('--secondary', "#403340")
-        document.documentElement.style.setProperty('--text', "#FFFFFF")
+        docStyle.setProperty('--primary', "#222222")
+        docStyle.setProperty('--secondary', "#403340")
+        docStyle.setProperty('--text', "#FFFFFF")
         codeStyle.href = "prismdark.css" 
         modeButton.textContent = btnContentDark
     }
     
     function setLightMode(){
-        document.documentElement.style.setProperty('--primary', "#FFFFFF")
-        document.documentElement.style.setProperty('--secondary', "#eef2f9")
-        document.documentElement.style.setProperty('--text', "#000000")
+        docStyle.setProperty('--primary', "#FFFFFF")
+        docStyle.setProperty('--secondary', "#eef2f9")
+        docStyle.setProperty('--text', "#000000")
         codeStyle.href = "prism.css"
         modeButton.textContent = btnContentLight
     }
