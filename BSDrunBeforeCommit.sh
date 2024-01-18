@@ -39,6 +39,7 @@ do
 </head>
 <body>
     <div id=\"canvas\">
+        <div id=\"overview\"></div>
         <div id=\"content\">
             <h1>$title</h1>
             $content

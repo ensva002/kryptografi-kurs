@@ -1,7 +1,7 @@
 fetch('../pagelist.json')
     .then(response => response.json())
     .then(data => {
-        const overview = document.createElement('div');
+        const overview = document.getElementById("overview");
         overview.id = 'overview';
         document.body.prepend(overview);
         const currentPage = decodeURIComponent(decodeURIComponent(window.location.pathname.split('/').pop()));
