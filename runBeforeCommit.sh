@@ -2,10 +2,10 @@
 
 #============== TRIM HTML ==============
 
-dir="markdown/"
+dir="markdown"
 
 # Destination directory
-dest="pages/"
+dest="pages"
 
 # Loop over each HTML file in the directory
 for filepath in "$dir"/*.md
@@ -48,9 +48,8 @@ do
 
     # Write the new content to a file in the destination directory
     echo "$new_content" > "$dest/$filename.html"
-
     # Remove the original file
-        rm "$dir/$filename.html"
+    rm "$dir/$filename.html"
 
 done
 
@@ -65,3 +64,4 @@ find $dir -name "*.html" ! -name "index.html" | sort -V | awk -v ORS=', ' '{ sub
 
 # End of JSON
 sed -i '$ s/..$/] }/' pagelist.json
+echo "complete"
