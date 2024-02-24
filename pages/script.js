@@ -1,4 +1,3 @@
-console.log("HEI")
 fetch('../pagelist.json')
     .then(response => response.json())
     .then(data => {
