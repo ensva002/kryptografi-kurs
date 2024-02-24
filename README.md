@@ -1,3 +1,3 @@
-# godot-guide
-Suplement til godot undervisning.
+# kryptografi-kurs
+Supplement til datasikkerhet undervisning.
 [ensva002.github.io](https://ensva002.github.io)
