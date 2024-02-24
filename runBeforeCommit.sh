@@ -13,7 +13,7 @@ do
     # Extract the filename from the filepath
     filename=$(basename "$filepath" .md)
 
-    pandoc -f markdown $filepath > $dir/$filename.html
+    pandoc -f markdown+emoji $filepath > $dir/$filename.html
     sed -E -i 's/<pre\sclass="([^"]*)">/<pre class="language-\1">/g' $dir/$filename.html
     # Replace underscores with spaces
     title=${filename//_/ }
