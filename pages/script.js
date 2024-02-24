@@ -30,7 +30,7 @@ function addLogo(overview){
     logo.style.width = "80%"
     logo.style.padding = "10pt"
     logo.addEventListener("click",function(){
-        window.location.href = "ensva002.github.io/index.html"
+        window.location.href = "https://ensva002.github.io/index.html"
     })
     overview.insertBefore(logo,overview.firstChild)
 }
