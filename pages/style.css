@@ -151,3 +151,29 @@ p code{
         margin-right: 0%;
     }
 }
+
+button {
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    padding: 3pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    border: solid 1pt var(--text);
+    color: var(--text);
+}
+textarea{
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    padding: 5pt;
+    border: 1pt;
+    color: var(--text);
+
+}
+input{
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    padding: 5pt;
+    border: 1pt;
+    color: var(--text);
+
+}

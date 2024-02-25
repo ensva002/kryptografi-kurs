@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon type=image/svg+xml href=../favicon.svg>
+    <link rel=stylesheet href=style.css>
+    <link id="codeStyle" rel=stylesheet href=prism.css>
+    <script type=module src=script.js></script>
+    <script type=module src=prism.js></script>
+    <title>2 - Cæsar-chiffer Demo</title>
+</head>
+<body>
+    <div id="canvas">
+        <div id="overview"></div>
+        <div id="content">
+            <h1>2 - Cæsar-chiffer Demo</h1>
+            <p>Melding:</p>
+            <textarea id="inn" placeholder="Skriv melding som skal bli kryptert/dekryptert her" id="" cols="30" rows="10"></textarea>
+            <br>
+            <p>Nøkkel:</p>
+            <input type="number" placeholder="Nøkkel" id="key">
+            <br><br>
+            <button onclick="encrypt()">Krypter</button>
+            <button onclick="decrypt()">Dekrypter</button>
+            <br>
+            <p>Output:</p>
+            <textarea disabled id="out" cols="30" rows="10" placeholder="Her kommer den krypterte/dekrypterte meldingen"></textarea>
+            <script src="pagescripts/caesar.js"></script>
+        </div>
+    </div>
+</body>
+</html>
