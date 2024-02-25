@@ -1,0 +1,4 @@
+#!/bin/bash
+#insert the command to start your favourite markdown editor. $1 is work dir.
+#EXAMPLE: flatpak run com.github.marktext.marktext $1
+flatpak run com.github.marktext.marktext $1

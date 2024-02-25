@@ -3,7 +3,7 @@
 # Angi banen til mappen du vil overvåke
 mappe="markdown"
 
-# flatpak run com.github.marktext.marktext $mappe &
+./.toolConf "$mappe" &
 
 echo "Venter på endringer i $mappe..."
 
