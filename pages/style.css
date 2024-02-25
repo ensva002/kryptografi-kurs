@@ -162,11 +162,11 @@ button {
     color: var(--text);
 }
 button:hover{
-	background-color: var(--primary);
+	border-color: var(--secondary);
 }
 button:active{
 	border-color: var(--secondary);
-	background-color: var(--secondary);
+	background-color: var(--primary);
 }
 
 textarea{
