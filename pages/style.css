@@ -161,6 +161,12 @@ button {
     border: solid 1pt var(--text);
     color: var(--text);
 }
+button:active{
+	border var(--secondary)
+}
+button:hover{
+	background-color: var(--primary)
+}
 textarea{
     background-color: var(--secondary);
     border-radius: 1rem;
