@@ -1,7 +1,25 @@
-Dette er en introduksjon til kryptografi. Vi skal gå over kryptering, dekryptering og hashing
+Dette er en introduksjon til kryptografi. Vi skal gå over kryptering, dekryptering og hashing.
 
-![](/home/endre/.var/app/com.github.marktext.marktext/config/marktext/images/2024-02-25-20-36-12-image.png)
+### TODO
 
-stor:
+- [ ] Hva er kryptografi
 
-<img src="file:///home/endre/.var/app/com.github.marktext.marktext/config/marktext/images/2024-02-25-20-36-05-image.png" title="" alt="" width="477">
+- [ ] Hvorfor trenger vi kryptografi
+
+- [ ] Substitusjon chiffere
+  
+  - [ ] Ceaser
+  
+  - [ ] OSV
+
+- [ ] Oppgaver
+
+- [ ] Stegonografi
+  
+  - [ ] Oppgaver
+
+- [ ] Oppsummering og symetrisk kryptering
+
+
+
+Krypto-Grafi kommer av latin og betyr hemmelig skrift

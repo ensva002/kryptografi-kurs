@@ -15,18 +15,34 @@
         <div id="overview"></div>
         <div id="content">
             <h1>2 - Cæsar-chiffer Demo</h1>
-            <p>Melding:</p>
-            <textarea id="inn" placeholder="Skriv melding som skal bli kryptert/dekryptert her" id="" cols="30" rows="10"></textarea>
-            <br>
-            <p>Nøkkel:</p>
-            <input type="number" placeholder="Nøkkel" id="key" style="width:97pt;">
-            <br><br>
-            <button onclick="encrypt()">Krypter</button>
-            <button onclick="decrypt()">Dekrypter</button>
-            <br>
-            <p>Output:</p>
-            <textarea disabled id="out" cols="30" rows="10" placeholder="Her kommer den krypterte/dekrypterte meldingen"></textarea>
-            <script src="pagescripts/caesar.js"></script>
+            <div class="wheelContainer">
+                <div class="wheelSegment">
+                    <p>Melding:</p>
+                    <textarea id="inn" placeholder="Skriv melding som skal bli kryptert/dekryptert her" id="" cols="30" rows="10"></textarea>
+                    <br>
+                    <p>Nøkkel:</p>
+                    <input type="number" placeholder="Nøkkel" id="key" value="0" onchange="rotate()" style="width:97pt;">
+                    <br><br>
+                    <button onclick="encrypt()">Krypter</button>
+                    <button onclick="decrypt()">Dekrypter</button>
+                    <br>
+                    <p>Output:</p>
+                    <textarea disabled id="out" cols="30" rows="10" placeholder="Her kommer den krypterte/dekrypterte meldingen"></textarea>
+
+                </div>
+                <div class="wheelSegment" id="wheels">
+                    <link rel="stylesheet" href="pagescripts/wheel.css">
+                    <div>
+                        <img src="../media/wheel.svg" width="100%" class="wheel">
+                        <div>
+                            <img src="../media/wheel.svg" width="80%" id="inner" class="wheel">
+                        </div>
+                    </div>
+                </div>
+                <div class="wheelSegment" id="strips">
+                </div>
+                <script src="pagescripts/caesar.js"></script>
+            </div>
         </div>
     </div>
 </body>

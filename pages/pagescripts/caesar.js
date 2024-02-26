@@ -57,3 +57,11 @@ function xcrypt() {
   }
   output.textContent = out.join("");
 }
+
+//Wheels
+let inner = document.getElementById("inner")
+
+function rotate(){
+  key = document.getElementById("key").value;
+  inner.style.transform = "rotate(" + (-key * 12.41379310344828) + "deg)";
+}

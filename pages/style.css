@@ -136,6 +136,7 @@ p code{
     #overview {
         box-shadow: var(--drawer-shadow);
         position: absolute;
+        z-index: 1;
         margin-left: var(--drawer-margin);
     }
     #toggle{

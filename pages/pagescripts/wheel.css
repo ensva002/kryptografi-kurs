@@ -1,0 +1,38 @@
+.wheelContainer {
+    display: flex;  
+    position: relative;
+
+}
+
+.wheelSegment {
+    flex: 1;
+    text-align: center;
+}
+.wheel{
+    position: absolute;
+    rotate: 342deg;
+    width: 50%;
+    left: 50%;
+    top: 0%;
+
+}
+
+#inner{
+    top:6.8%;
+    left: 55.1%;
+    width: 40%;
+    transition: 500ms;
+}
+
+#strips{
+    display: none;
+}
+
+@media (max-width: 870pt) {
+    #wheels{
+        display: none;
+    }
+    #strips{
+        display: block;
+    }
+}
