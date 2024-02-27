@@ -6,7 +6,6 @@
 
 .wheelSegment {
     flex: 1;
-    color: rgb(245, 245, 220,0.5);
 }
 .wheel{
     position: absolute;
