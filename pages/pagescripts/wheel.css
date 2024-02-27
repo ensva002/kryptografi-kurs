@@ -6,11 +6,10 @@
 
 .wheelSegment {
     flex: 1;
-    text-align: center;
+    color: rgb(245, 245, 220,0.5);
 }
 .wheel{
     position: absolute;
-    rotate: 342deg;
     width: 50%;
     left: 50%;
     top: 0%;
@@ -18,15 +17,16 @@
 }
 
 #inner{
-    top:6.8%;
-    left: 55.1%;
-    width: 40%;
+    top:11%;
+    left: 57.5%;
+    width: 35%;
     transition: 500ms;
 }
 
 #strips{
     display: none;
 }
+  
 
 @media (max-width: 870pt) {
     #wheels{
