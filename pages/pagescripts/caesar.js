@@ -1,7 +1,9 @@
 let inn;
+let keyField = document.getElementById("key");
 let key;
 let output = document.getElementById("out");
 let out;
+const alphabetLength = 29;
 
 function encrypt() {
   getInput();
@@ -16,12 +18,12 @@ function decrypt() {
 
 function getInput() {
   inn = document.getElementById("inn").value.toLowerCase();
-  key = document.getElementById("key").value;
+  key = keyField.value;
 }
 
 function xcrypt() {
   out = [];
-  const alphabetLength = 29;
+  
   for (let i = 0; i < inn.length; i++) {
     let charCode = inn.charCodeAt(i);
     if (/[a-zæøå]/.test(inn[i])) {
@@ -60,8 +62,23 @@ function xcrypt() {
 
 //Wheels
 let inner = document.getElementById("inner")
-
+let rotation
 function rotate(){
-  key = document.getElementById("key").value;
-  inner.style.transform = "rotate(" + (-key * 12.41379310344828) + "deg)";
+  rotation = keyField.value
+  key = parseInt(rotation) % alphabetLength;
+  if (key < 0){
+    key += alphabetLength
+  }
+  keyField.value = key;
+  inner.style.transform = "rotate(" + (-rotation * 12.41379310344828) + "deg)";
+  if(rotation == 29 || rotation == -1){
+    setTimeout(() => {
+      inner.style.transition = '0s';
+      rotation = key
+      inner.style.transform = "rotate(" + (-rotation * 12.41379310344828) + "deg)";
+    }, 70)
+    setTimeout(() => {
+      inner.style.transition = '0.07s';
+    }, 90)
+  }
 }
