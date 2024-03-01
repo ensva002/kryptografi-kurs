@@ -14,7 +14,14 @@ do
     filename=$(basename "$filepath" .md)
 
     pandoc -f markdown+emoji $filepath > $dir/$filename.html
+    #verifisert fungerer med: gd-script,
     gsed -E -i 's/<pre\sclass="([^"]*)">/<pre class="language-\1">/g' $dir/$filename.html
+    #verifisert fungerer med: python,
+    gsed -E -i '/<pre\sclass="sourceCode\s([^"]*)">/,/<\/pre>/ s/<pre\sclass="sourceCode\s([^"]*)">/<pre class="language-\1">/g; s/<code\sclass="sourceCode\s([^"]*)">/<code class="language-\1">/g' $dir/$filename.html
+
+
+
+
     
     # Replace underscores with spaces
     title=${filename//_/ }
