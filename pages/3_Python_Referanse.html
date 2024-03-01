@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon type=image/svg+xml href=../favicon.svg>
+    <link rel=stylesheet href=style.css>
+    <link id="codeStyle" rel=stylesheet href=prism.css>
+    <script type=module src=script.js></script>
+    <script type=module src=prism.js></script>
+    <title>3 Python Referanse</title>
+</head>
+<body>
+    <div id="canvas">
+        <div id="overview"></div>
+        <div id="content">
+            <h1>3 Python Referanse</h1>
+            <h2 id="variabler-og-datatyper">Variabler og Datatyper</h2>
+<p>I Python kan du lagre data i variabler. En variabel kan sees på som
+en boks hvor du kan lagre informasjon.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">&quot;Hei, verden!&quot;</span></span></code></pre></div>
+<p>Datatyper inkluderer blant annet heltall (<code>int</code>), flyttall
+(<code>float</code>), strenger (<code>str</code>), og booleans
+(<code>bool</code>).</p>
+<h2 id="input-og-output">Input og Output</h2>
+<p>For å samhandle med brukeren, kan du bruke <code>input()</code> for å
+motta input og <code>print()</code> for å vise output.</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;Hva heter du? &quot;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Hei, &quot;</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">&quot;!&quot;</span>)</span></code></pre></div>
+<h2 id="betingelser">Betingelser</h2>
+<p>Betingelser lar deg utføre forskjellige handlinger basert på om en
+betingelse er sann eller ikke.</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Hvor gammel er du? &quot;</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> age <span class="op">&gt;=</span> <span class="dv">18</span>:</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Du er voksen.&quot;</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Du er barn.&quot;</span>)</span></code></pre></div>
+<h2 id="løkker">Løkker</h2>
+<p>Løkker gjør at du kan gjenta kode flere ganger.</p>
+<h3 id="while-løkke">While-løkke</h3>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> count <span class="op">&lt;</span> <span class="dv">5</span>:</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Tallet er&quot;</span>, count)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span></code></pre></div>
+<h3 id="for-løkke">For-løkke</h3>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Tallet er&quot;</span>, i)</span></code></pre></div>
+<h2 id="lister">Lister</h2>
+<p>Lister lar deg lagre flere verdier i en enkelt variabel.</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">&quot;eple&quot;</span>, <span class="st">&quot;banan&quot;</span>, <span class="st">&quot;kirsebær&quot;</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fruits[<span class="dv">0</span>])  <span class="co"># Utskrift: eple</span></span></code></pre></div>
+<h2 id="funksjoner">Funksjoner</h2>
+<p>Funksjoner lar deg definere en blokk med kode som du kan kjøre flere
+ganger.</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet(name):</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Hei &quot;</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">&quot;!&quot;</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>greet(<span class="st">&quot;Anna&quot;</span>)</span></code></pre></div>
+<h2 id="feilhåndtering">Feilhåndtering</h2>
+<p>Feilhåndtering i Python gjøres vanligvis med <code>try</code> og
+<code>except</code> blokker.</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    number <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Skriv inn et tall: &quot;</span>))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">ValueError</span>:</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Det er ikke et tall!&quot;</span>)</span></code></pre></div>
+<h2 id="arbeid-med-strenger">Arbeid med Strenger</h2>
+<p>Strenger i Python kan manipuleres på forskjellige måter, for eksempel
+gjennom å bruke indeksering eller funksjoner.</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>message <span class="op">=</span> <span class="st">&quot;Hei, verden!&quot;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(message[<span class="dv">0</span>])  <span class="co"># Utskrift: H</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(message.lower())  <span class="co"># Utskrift: hei, verden!</span></span></code></pre></div>
+<p>Med disse grunnleggende konseptene skal du være godt rustet til å
+starte med Python-programmering og løse varierte oppgaver.</p>
+<h2 id="importering-av-moduler">Importering av Moduler</h2>
+<p>I Python kan du utvide funksjonaliteten i dine programmer ved å
+importere moduler. En modul er en fil som inneholder Python-kode. Noen
+moduler er innebygde, mens andre kan installeres fra tredjeparter.</p>
+<h3 id="hvordan-importere">Hvordan Importere</h3>
+<p>For å importere en modul bruker du <code>import</code>-nøkkelordet.
+Du kan også importere spesifikke funksjoner fra en modul.</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.sqrt(<span class="dv">16</span>))  <span class="co"># Utskrift: 4.0</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(datetime.now())  <span class="co"># Utskrift: (nåværende dato og tid)</span></span></code></pre></div>
+<h3 id="bruk-av-alias">Bruk av Alias</h3>
+<p>Du kan gi en modul et alias for å forenkle koden.</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math <span class="im">as</span> m</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(m.sqrt(<span class="dv">25</span>))  <span class="co"># Utskrift: 5.0</span></span></code></pre></div>
+<h2 id="arbeid-med-strenger-utvidet">Arbeid med Strenger (Utvidet)</h2>
+<p>Strenger i Python er svært fleksible og kan manipuleres på mange
+måter.</p>
+<h3 id="slicing">Slicing</h3>
+<p>Du kan “slice” strenger for å hente ut deler av dem.</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">&quot;Python er gøy!&quot;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(text[<span class="dv">7</span>:<span class="dv">9</span>])  <span class="co"># Utskrift: er</span></span></code></pre></div>
+<h3 id="finn-og-erstatt">Finn og Erstatt</h3>
+<p>Finn understrenger og erstatt dem med noe annet.</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>message <span class="op">=</span> <span class="st">&quot;Hei verden&quot;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>new_message <span class="op">=</span> message.replace(<span class="st">&quot;verden&quot;</span>, <span class="st">&quot;alle&quot;</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(new_message)  <span class="co"># Utskrift: Hei alle</span></span></code></pre></div>
+<h3 id="formatering">Formatering</h3>
+<p>Python tilbyr flere måter å formatere strenger på, noe som er nyttig
+for å bygge dynamiske meldinger.</p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">&quot;Anna&quot;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> er </span><span class="sc">{</span>age<span class="sc">}</span><span class="ss"> år gammel.&quot;</span>)  <span class="co"># Utskrift: Anna er 25 år gammel.</span></span></code></pre></div>
+<h2 id="grunnleggende-om-feil-og-unntak">Grunnleggende om Feil og
+Unntak</h2>
+<p>Når du programmerer, vil du uunngåelig møte feil. Å forstå
+forskjellene mellom syntaksfeil og unntak er viktig.</p>
+<ul>
+<li><strong>Syntaksfeil</strong> oppstår når Python ikke forstår koden
+på grunn av skrivefeil eller feil i koden din.</li>
+<li><strong>Unntak</strong> oppstår når koden er syntaktisk korrekt, men
+programmet støter på en feil under utførelsen.</li>
+</ul>
+<p>Lær hvordan du bruker <code>try</code> og <code>except</code> for å
+håndtere unntak slik at programmet ditt kan reagere på feil på en
+kontrollert måte.</p>
+<h2 id="løkker-utvidet">Løkker (Utvidet)</h2>
+<h3 id="for-løkker-med-lister">For-løkker med Lister</h3>
+<p>For-løkker er ideelle for å iterere over elementer i en liste.</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">&quot;eple&quot;</span>, <span class="st">&quot;banan&quot;</span>, <span class="st">&quot;kirsebær&quot;</span>]</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fruit <span class="kw">in</span> fruits:</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(fruit)</span></code></pre></div>
+<h3 id="while-løkker-med-betingelser">While-løkker med Betingelser</h3>
+<p>While-løkker fortsetter å kjøre så lenge en betingelse er sann.</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> number <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(number)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    number <span class="op">-=</span> <span class="dv">1</span></span></code></pre></div>
+        </div>
+    </div>
+</body>
+</html>
