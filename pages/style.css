@@ -136,7 +136,6 @@ p code{
     #overview {
         box-shadow: var(--drawer-shadow);
         position: absolute;
-        z-index: 1;
         margin-left: var(--drawer-margin);
     }
     #toggle{
@@ -151,38 +150,4 @@ p code{
         margin-left: 0%;
         margin-right: 0%;
     }
-}
-
-button {
-    background-color: var(--secondary);
-    border-radius: 1rem;
-    padding: 3pt;
-    padding-left: 5pt;
-    padding-right: 5pt;
-    border: solid 1pt var(--text);
-    color: var(--text);
-}
-button:hover{
-	border-color: var(--secondary);
-}
-button:active{
-	border-color: var(--secondary);
-	background-color: var(--primary);
-}
-
-textarea{
-    background-color: var(--secondary);
-    border-radius: 1rem;
-    padding: 5pt;
-    border: 1pt;
-    color: var(--text);
-
-}
-input{
-    background-color: var(--secondary);
-    border-radius: 1rem;
-    padding: 5pt;
-    border: 1pt;
-    color: var(--text);
-
 }
