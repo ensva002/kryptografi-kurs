@@ -45,26 +45,26 @@ Du kan også redigere gitignore med github desktop.
 
 ---
 
-## 🧑‍💻Jobbe i team
+# 🧑‍💻Jobbe i team
 
-### Commit og fetch OFTE
+## Commit og fetch OFTE
 
 Hver gang du skal legge til en ny ting, fetch. Da passer du på at du alltid jobber med den nyeste versionen, da ungår du mange store merge confilicts.
 
-### Push ofte
+## Push ofte
 
 Hver gang du er ferdig med noe som virker, push. På dette viset vil de du jobber med alltid ha tilgang til det siste arbeidet ditt. Igjen, dette hjelper til med å ungå store merge confilicts.
 
-### Bruk branches
+## Bruk branches
 
 Vi har gått gjennom flere tilfeller hvor branches er praktisk. Her er en ny spesefikk for å jobbe i teams. Om du sitter å jobber i din egen branch, så kan du, uten å ødelegge for andre pushe uferdig kode. F.eks. det er slutten av timen, men du vil jobbe hjemme på din egen pc, så kan du fint pushe den uferdige koden uten at alle de andre på teamet sitter igjen med et spill de ikke kan jobbe med eller teste.
 
-### Unngå å jobbe med den samme filen.
+## Unngå å jobbe med den samme filen.
 
 Kommuniser med gruppen din, pass på at ikke flere rører samme fil samtidig. Her blir det fort mange merge conflicts, SPESIELT når du jobber med filer som ikke er ren kode, som f.eks. noder og scener i Godot.
 
 Et eksempel, du skal jobbe med spiller figuren, og en på teamet ditt skal jobbe med en level, ikke test spilleren i levelen som noen andre jobber på. lag heller din egen scene hvor du tester ditt arbeid.
 
-### Les feilmeldinger nøye, og løs konflikter.
+## Les feilmeldinger nøye, og løs konflikter.
 
 Det kommer til å bli merge conflicts, og dette er noe dere må lære dere å løse. Har dere fulgt punktene over skal de ikke bli veldig infløkte. Ved å lese feilmeldingene som kommer når det er en merge conflict, så er det ofte veldig tydelig hva som må fikses. VS Code har innebygde verktøy for å fort løse en konflikt, og Godot vil spørre om du vil bruke den nye versionen av noden eller den du jobber på.
