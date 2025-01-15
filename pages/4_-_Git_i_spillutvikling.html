@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon type=image/svg+xml href=../favicon.svg>
+    <link rel=stylesheet href=style.css>
+    <link id="codeStyle" rel=stylesheet href=prism.css>
+    <script type=module src=script.js></script>
+    <script type=module src=prism.js></script>
+    <title>4 - Git i spillutvikling</title>
+</head>
+<body>
+    <div id="canvas">
+        <div id="overview"></div>
+        <div id="content">
+            <h1>4 - Git i spillutvikling</h1>
+            <h1 id="store-filer">📦Store filer</h1>
+<p>Binærfiler, som bilder, lyd og video, egner seg dårlig til
+versionskontroll med git. Du vil fort ende opp med masse data som kan
+fylle all plassen du har til rådighet på din remote repository
+(github/gitlab). Et repo er anbefalt å holdes på under 1GB og det
+frarådes å gå over 5GB Her er noen løsninger for å holde størrelsen
+nede.</p>
+<h2 id="git-lfs">Git-lfs</h2>
+<p>Git Large File Storage er et tilegg til git som håndterer større
+filer på et mer effektivt vis. Du vil fremdeles laste filene opp på
+github, men de vil ikke bli med i historien, som igjen vil si at de ikke
+vil vokse seg større over tid, og er lett nok å fjerne for å rydde
+plass.</p>
+<ol type="1">
+<li>Last ned med homebrew eller apt i terminalen:</li>
+</ol>
+<pre class="language-shell"><code>#Mac
+brew install git-lfs
+#Linux Mint
+sudo apt install git-lfs</code></pre>
+<ol start="2" type="1">
+<li>Så må det installeres med git med denne kommandoen:</li>
+</ol>
+<pre class="language-shell"><code>git lfs install</code></pre>
+<ol start="3" type="1">
+<li>I terminalen, naviger til prosjekt mappen din og legg til hva slags
+filer git-lfs skal håndtere. Anbefalt å gjøre dette med bildefiler,
+lydfiler og arbeidsfiler til adobe programmer (photoshop, illustrator,
+osv).</li>
+</ol>
+<p>Eksempel:</p>
+<pre class="language-shell"><code>git lfs track &quot;*.psd&quot; &quot;*.jpg&quot; &quot;*.mp3&quot; &quot;introFilm.mov&quot;</code></pre>
+<p>Les mer om git-lfs: https://git-lfs.com/</p>
+<h2 id="git-ignore">Git ignore</h2>
+<p>Om du har virkelig store filer, 100MB og oppover, så kan det lønne
+seg å be git ignorere filen, og heller dele denne med gruppen på annet
+vis, f.eks. via OneDrive.</p>
+<p>For å redigere hvilke filer git ignorerer kan du lage en .gitignore
+fil i prosjekt mappen din. (Obs: ikke putt denne filen i .git mappen).
+Så kan du på hver linje skrive navnet på filen du vil ignorere. Du kan
+også bruke wildcard * til å f.eks ignorere alle filer av en type.</p>
+<p><img src="../media/gi1.gif" /></p>
+<p>Du kan også redigere gitignore med github desktop.</p>
+<p><img src="../media/gi2.gif" /></p>
+<hr />
+<h2 id="jobbe-i-team">🧑‍💻Jobbe i team</h2>
+<h3 id="commit-og-fetch-ofte">Commit og fetch OFTE</h3>
+<p>Hver gang du skal legge til en ny ting, fetch. Da passer du på at du
+alltid jobber med den nyeste versionen, da ungår du mange store merge
+confilicts.</p>
+<h3 id="push-ofte">Push ofte</h3>
+<p>Hver gang du er ferdig med noe som virker, push. På dette viset vil
+de du jobber med alltid ha tilgang til det siste arbeidet ditt. Igjen,
+dette hjelper til med å ungå store merge confilicts.</p>
+<h3 id="bruk-branches">Bruk branches</h3>
+<p>Vi har gått gjennom flere tilfeller hvor branches er praktisk. Her er
+en ny spesefikk for å jobbe i teams. Om du sitter å jobber i din egen
+branch, så kan du, uten å ødelegge for andre pushe uferdig kode. F.eks.
+det er slutten av timen, men du vil jobbe hjemme på din egen pc, så kan
+du fint pushe den uferdige koden uten at alle de andre på teamet sitter
+igjen med et spill de ikke kan jobbe med eller teste.</p>
+<h3 id="unngå-å-jobbe-med-den-samme-filen.">Unngå å jobbe med den samme
+filen.</h3>
+<p>Kommuniser med gruppen din, pass på at ikke flere rører samme fil
+samtidig. Her blir det fort mange merge conflicts, SPESIELT når du
+jobber med filer som ikke er ren kode, som f.eks. noder og scener i
+Godot.</p>
+<p>Et eksempel, du skal jobbe med spiller figuren, og en på teamet ditt
+skal jobbe med en level, ikke test spilleren i levelen som noen andre
+jobber på. lag heller din egen scene hvor du tester ditt arbeid.</p>
+<h3 id="les-feilmeldinger-nøye-og-løs-konflikter.">Les feilmeldinger
+nøye, og løs konflikter.</h3>
+<p>Det kommer til å bli merge conflicts, og dette er noe dere må lære
+dere å løse. Har dere fulgt punktene over skal de ikke bli veldig
+infløkte. Ved å lese feilmeldingene som kommer når det er en merge
+conflict, så er det ofte veldig tydelig hva som må fikses. VS Code har
+innebygde verktøy for å fort løse en konflikt, og Godot vil spørre om du
+vil bruke den nye versionen av noden eller den du jobber på.</p>
+        </div>
+    </div>
+</body>
+</html>
